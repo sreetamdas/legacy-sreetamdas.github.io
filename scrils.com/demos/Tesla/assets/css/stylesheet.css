@@ -1,0 +1,827 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500);
+/*!
+ * Tesla Onepage Personal/Portofolio
+ * © sandthemes
+*/
+/* ========TABLE OF CONTENTS========== 
+00. BODY, LINKS, SECTION TITLES, GENERAL
+01. HEADERBAR, NAVIGATION
+02. EVERY SECTION TITLES
+03. SECTION INTRO
+04. SECTION ABOUT
+05. SECTION RESUME
+06. SECTION PORTOFOLIO (WORKS)
+	WORKS GRID
+	WORKS FILTERS
+07. SECTION SERVICES
+08. SECTION STATISTICS
+09. SECTION CONTACT
+	GENERAL FORM STYLES
+	MESSAGE FOR SUCCES
+	MESSAGE FOR ERROR
+1.0 BUTTONS & MODALS
+1.1 MEDIA QUERIES FOR RESPONSIVE DESIGN
+
+/* ========00. BODY, LINKS, SECTION TITLES, GENERAL========== */
+html, body {
+     width: 100%;
+     height: 100%;
+}
+body {
+	font-family: 'Maven Pro', sans-serif;
+  	font-size: 14px;
+  	color: #222222;
+  	-webkit-font-smoothing: antialiased;
+	background-color: #1a1a1a;
+}
+a {
+  	color: #222222;
+  	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	transition: 0.3s;
+}
+a:hover {
+  	color: #2eb267;
+  	text-decoration:none;
+}
+
+hr {
+	width: 20px;
+	margin: 40px auto;
+	height: 1px !important;
+	color: #777;
+	background-color: #777;
+}
+p {
+	line-height: 21px;
+	letter-spacing: 2px;
+	font-size: 11px;
+	color: #777;
+}
+/*PAGE LOADER*/
+
+#loader {
+    background: #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#loaderInner {
+    background:#ffffff url(../images/load.gif) center center no-repeat;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+}
+
+/* ========01. HEADERBAR, NAVIGATION========== */
+
+
+.content-wrap {
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.content::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+	transition: opacity 0.3s, transform 0s 0.3s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+/* Menu Button */
+.menu-button {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	font-size: 21px;
+	border: 0;
+  	outline: 0;
+	color: #ffffff;
+	background: #0a0a0a;
+}
+
+/* Menu */
+.menu-wrap {
+	position: fixed;
+	z-index: 999;
+	background: #0a0a0a;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 240px;
+	padding: 20px 20px 10px 20px;
+	text-align: left;
+	top:70px;
+	left: 10px;
+	opacity: 0;
+	display: none;
+
+}
+.menu {
+	height: 100%;
+	opacity: 0;
+	color: #777777;
+	text-align: left;
+}
+.menu-nav {-webkit-padding-start: 0px;-moz-padding-start:0px;}
+.menu-nav li {list-style: none;}
+.menu-nav li a {
+	color: #777777;
+	line-height: 40px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding: 5px;
+	text-decoration: none;
+}
+.menu-nav li.active a {
+	border-bottom: 1px solid #2eb267;
+	color: #ffffff;
+}
+
+/* Shown menu */
+.show-menu .content::before {opacity: 1;}
+.show-menu .menu-wrap {opacity: 1;display: block;}
+.show-menu .menu {opacity: 1;}
+
+
+
+/* ========02. EVERY SECTION TITLES========== */
+.sectionTitle {
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+.sectionTitle h1 {
+  	letter-spacing: 5px;
+  	font-size: 18px;
+  	font-weight: 600;
+  	text-transform: uppercase;
+  	padding-bottom: 10px;
+  	margin-bottom: 10px;
+}
+.sectionTitle h4 {
+  	letter-spacing: 3px;
+  	font-size: 10px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	padding-bottom: 0px;
+  	margin-bottom: 10px;
+  	color: #777;
+}
+.sectionTitle .separatorlinecolor {
+  	margin-bottom: 30px;
+}
+.separatorlinecolor {
+  	width: 75px;
+  	height: 2px;
+  	margin: 0 auto;
+  	background: #2eb267;
+}
+.separatorlinewhite {
+  	width: 100px;
+  	height: 2px;
+  	margin: 0 auto;
+  	background: #ffffff;
+}
+/* ========03. SECTION INTRO========== */
+
+#sectionIntro {
+	text-align: center;
+	background-color: #1a1a1a;
+ 	background-image: url(../images/i2.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: 50% 80%;
+	height: auto;
+	width: 100%;
+	-webkit-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+	box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+}
+.aboutContainer {
+	padding: 0;
+}
+.introHeader {
+	height: 100%;
+ 	text-align: left;
+ 	padding-left:0;
+ 	padding-top: 25%;
+ 	min-height: 700px;
+}
+.introContent {
+	text-align: center;
+}
+.introHeading h1 {
+  	color: #eee;
+  	font-size:40px;
+  	font-weight: 900;
+  	letter-spacing: 10px;
+  	text-transform: uppercase;
+  	padding-bottom: 0px;
+  	line-height: 75px;
+}
+.introTags {
+	display: table;
+	margin: 0 auto;
+	font-size: 12px;
+  	font-weight: 300;
+  	letter-spacing: 5px;
+  	color: #ffffff;
+  	padding: 15px;
+  	background: #2eb267;
+  	text-transform: uppercase;
+}
+a.scroll-down {
+	position: absolute;
+	bottom: 10%;
+}
+a.scroll-down div {
+	font-size: 30px;
+	color: #2eb267;
+}
+
+/* ====04. SECTION ABOUT ==== */
+
+#sectionAbout {
+	background: #ffffff;
+	padding-bottom: 75px;
+}
+
+.aboutMe {
+	padding: 10px 40px;
+}
+
+.aboutMe h1 {
+  	letter-spacing: 5px;
+  	font-size: 10px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	text-align: center;
+  	color: #777;
+  	padding-bottom: 30px;
+}
+.textBlue {
+	color: #2eb267;
+}
+.aboutProfile {
+	text-align: right;
+}
+.profileAv {
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	width: 80px;
+	height: 80px;
+}
+.aboutProfile h3 {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+.aboutProfile h4 {	
+	color: #2eb267;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.profileInfo {
+	padding-top: 30px;
+}
+.aboutProfile h5 {
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 15px;
+}
+.aboutSkills h4{
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+
+/* ========05. SECTION RESUME========== */
+
+#sectionResume {
+	background: #eeeeee;
+	padding-bottom: 100px;
+}
+.resumeEe {
+	margin: 0 auto;
+}
+.resumeEe .icon {
+	font-size: 25px;
+	background: #2eb267;
+	color: #ffffff;
+	padding: 5px 5px 0 5px;
+}
+.resumeEe h3 {
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+.resumeEe h4 {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.resumeEe p {
+	line-height: 21px;
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin-top: 5px;
+}
+.resumeEd {text-align: right;}
+.resumeEd p {padding-left: 25px;}
+.resumeEd h3 {text-align: right;}
+.resumeEd .icon {margin-left: 20px;float: right;}
+.resumeEd {border-right: 1px solid #2eb267;}
+
+.resumeEm {text-align: left;}
+.resumeEm p {padding-right: 25px;}
+.resumeEm h3 {text-align: left;}
+.resumeEm .icon {margin-right: 20px;float: left;}
+.resumeEm {border-left: 1px solid #2eb267;}
+
+.resumeList {
+	-webkit-padding-start: 0px;
+	-moz-padding-start:0px;
+	padding: 50px;
+	background: #ffffff;
+}
+.resumeList li {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.resumePeriod {
+	background: #2eb267;
+	color: #fff;
+	padding: 2px 4px;
+	font-size: 11px;
+}
+.resumeName {
+	color: #2eb267;
+	font-size: 12px;
+	text-transform: lowercase;
+}
+
+
+/* ========06. SECTION PORTOFOLIO (WORKS)========== */
+
+#sectionWorks {
+	padding-top: 25px;
+	padding-bottom: 100px;
+	text-align: center;
+	background-color: #1a1a1a;
+	color: #ffffff;
+}
+
+/* ====WORKS GRID==== */
+#worksGrid {
+	display: table;
+}
+.worksItem {
+  	display: none;
+  	padding: 0px;
+  	overflow: hidden;
+  	height: auto;
+  	text-align: center;
+}
+.worksItem img {
+	width: 100%;
+	height: auto;
+  	-webkit-transition: all .25s ease-out;
+  	transition: all .25s ease-out;
+}
+.worksItem .itemCaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+  	color: #fff!important;
+	background: rgba(22,22,22,0.5);
+}
+.worksItem:hover .itemCaption {
+	background: rgba(22,22,22,0.9);
+}
+.itemCaption h3 {
+	font-size: 12px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.capContent {
+	padding-top: 15%;
+	opacity: 0;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.capPreview {
+	color: #2eb267;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 3px;
+	border: 2px solid #2eb267;
+	padding: 5px;
+	margin-top: 10px;
+}
+.worksItem:hover .capContent{
+	opacity: 1;
+	padding-top:20%;
+}
+
+/* ====WORKS FILTERS==== */
+.worksFilters {
+  	-webkit-padding-start:0px;
+}
+.worksFilters {
+  	margin: 0 auto;
+  	text-align: center;
+  	margin-bottom: 50px;
+}
+.worksFilters li {
+  	display: inline-block;
+  	cursor: pointer;
+  	padding: 5px;
+  	margin:0 10px;
+  	font-weight: 400;
+  	font-size: 10px;
+  	text-transform: uppercase;
+  	-webkit-transition: all .2s ease-out;
+  	transition: all .2s ease-out;
+  	letter-spacing: 3px;
+  	color: #777777;
+}
+.current-filter {
+  	color: #ffffff!important;
+  	border-bottom: 1px solid #2eb267;
+}
+
+
+/* ========07. SECTION SERVICES========== */
+
+#sectionServices {
+	background: #ffffff;
+	padding: 50px 0 75px 0;
+}
+.servicesRow {
+	text-align: center;
+}
+.servicesBox .icon{
+	color: #2eb267;
+	font-size: 50px;
+	padding-bottom: 10px;
+}
+.servicesBox {
+	padding: 0 10px;
+}
+.servicesBox h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+  	font-weight: 600;
+  	font-size: 14px;
+  	letter-spacing: 3px;
+}
+.servicesBox p {
+	padding: 25px 15px 0 15px;
+}
+.servicesColor {
+	background: #2eb267;
+	padding: 2px 4px;
+	color: #ffffff;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+/* ====08. SECTION STATISTCS ==== */
+
+#sectionStats {
+	background-color: #eeeeee;
+ 	background-image: url(../images/01.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: 50% 80%;
+ 	color: #ffffff;
+ 	text-align: center;
+ 	padding: 50px 0;
+}
+#sectionStats .col-md-2 {
+	border-right: 1px solid #ddd;
+}
+#sectionStats .col-md-2-last { border-right: 0;}
+
+#sectionStats h3 {
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+#sectionStats .icon {
+	font-size: 40px;
+	margin-top:10px;
+}
+#sectionStats h5 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+/* ======== 09. SECTION CONTACT========== */
+
+
+#sectionContact {
+	background: #ffffff;
+}
+.contactForm {margin: 0 0 50px 0;}
+.contactForm h1 {
+  	letter-spacing: 5px;
+  	font-size: 15px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding-bottom: 30px;
+}
+.contactFooter {
+	background-color: #0a0a0a;
+	padding: 40px 0 30px 0;
+	color: #fff;
+}
+.footerLeft {
+	font-size: 13px;
+	font-weight: 400;
+	color: #777;
+	padding-top: 15px;
+}
+.footerRight {
+	text-align: right;
+	font-size: 30px;
+}
+.footerRight a{
+	color: #777;
+	padding: 0 10px;
+}
+.footerRight a:hover {
+	color: #fff;
+}
+.contactRight {
+	padding-left: 5%;
+}
+.contactBox .icon {
+	color: #2eb267;
+	font-size: 25px;
+}
+.contactBox {
+	margin: 30px 0;
+}
+.contactBox h3 {
+	margin-top: 2px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+  	font-weight: 600;
+  	font-size: 12px;
+  	letter-spacing: 3px;
+}
+
+/* ====GENERAL FORM STYLES==== */
+input, textarea, select {
+    color: #222;
+	background: transparent;
+	vertical-align: top;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	margin: 0;
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	position: relative;
+	z-index: 5;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	border: 1px solid #2eb267;
+}
+
+input.submit {
+	width: auto;
+	cursor: pointer;
+	position: relative;
+    background: transparent;
+    color: #ffffff;
+    padding: 16px;
+    background: #2eb267;
+    margin: 20px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  	font-weight: 400;
+  	letter-spacing: 2px;
+}
+
+#contactform input[type="submit"][disabled] { background:#777; cursor: default; }
+#contactform div {margin: 20px 0;}
+.contactForm fieldset { padding:0;border:0; }
+.contactForm label {
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* ====MESSAGE FOR SUCCES==== */
+
+#message { 
+	margin: 1em 0; 
+	padding: 0; 
+	display: block; 
+	background: transparent none; 
+}
+#message h1 {
+  	letter-spacing: 1px;
+ 	font-size: 20px;
+  	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#message p {
+  	font-size: 16px;
+  	font-weight: 200;
+  	text-align: left;
+  	font-style: italic;
+}
+
+/* ====MESSAGE FOR ERROR==== */
+.errorMessage { 
+  	display: block;
+  	font-size: 14px;
+    padding: 20px 0 0 0;
+}
+
+ul.errorMessages { padding: 10px 0 0 0; }
+ul.errorMessages li { 
+  	font-size: 16px;
+  	font-weight: 200;
+  	text-align: left;
+  	color: #2eb267;
+  	list-style: none;
+  	line-height: 25px;
+  }
+
+/* ========1.0 BUTTONS & MODALS========== */
+
+.button {
+	border:0;
+  	outline: 0;
+  	overflow:hidden;
+  	z-index: 1;
+  	cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.button-medium {
+	padding: 10px 14px;
+}
+.button-color {
+	background: #2eb267;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.button-color a {
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+.modal-box {
+	max-width: 550px;
+	background: #fff;
+	position: relative;
+	margin: 0 auto;
+}
+.modal-box img {
+	width: 100%;
+	height: 100%;
+}
+.modal-box-content {
+	padding: 25px;
+}
+.modal-box-content h2 {
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.modal-box-content p {
+	color: #777777;
+	line-height: 21px;
+	letter-spacing: 2px;
+	font-size: 11px;
+}
+.progress-bar {
+	float: left;
+	width: 0;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #2eb267;
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease;
+}
+.progress {
+	margin-top: 5px;
+	background-color: #eee;
+}
+/* ========1.1 MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
+
+@media screen and (max-width: 768px) {
+
+.introHeading h1 {
+  	font-size:35px;
+  	line-height: 45px;
+}
+.introHeading {
+	padding: 0 15px;
+}
+.navbar li {
+	display: block;
+}
+.navbar li a {
+	line-height: 40px;
+}
+.introHeader {
+	min-height: 400px;
+}
+.resumeList {
+	padding: 25px;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+.aboutMe {
+	padding: 20px;
+}
+.resumeList {
+	padding: 15px;
+}
+.introTags {
+	font-size: 16px;
+	padding: 3px;
+}
+}
+
+
