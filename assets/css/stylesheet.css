@@ -36,14 +36,23 @@ body {
 	background-color: #1a1a1a;
 }
 a {
-  	color: #222222;
+  	color: aqua;
   	-webkit-transition: 0.3s;
   	-moz-transition: 0.3s;
   	transition: 0.3s;
 }
 a:hover {
-  	color: #2eb267;
+  	color: aquamarine;
   	text-decoration:none;
+}
+
+a:visited {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 hr {
@@ -154,7 +163,7 @@ p {
 	text-decoration: none;
 }
 .menu-nav li.active a {
-	border-bottom: 1px solid #2eb267;
+	border-bottom: 1px solid #99ccff;
 	color: #ffffff;
 }
 
@@ -173,7 +182,7 @@ p {
 }
 .sectionTitle h1 {
   	letter-spacing: 5px;
-  	font-size: 18px;
+  	font-size: 38px;
   	font-weight: 600;
   	text-transform: uppercase;
   	padding-bottom: 10px;
@@ -181,7 +190,7 @@ p {
 }
 .sectionTitle h4 {
   	letter-spacing: 3px;
-  	font-size: 10px;
+  	font-size: 18px;
   	font-weight: 400;
   	text-transform: uppercase;
   	padding-bottom: 0px;
@@ -195,7 +204,7 @@ p {
   	width: 75px;
   	height: 2px;
   	margin: 0 auto;
-  	background: #2eb267;
+  	background: #99ccff;
 }
 .separatorlinewhite {
   	width: 100px;
@@ -248,7 +257,7 @@ p {
   	letter-spacing: 5px;
   	color: #ffffff;
   	padding: 15px;
-  	background: #2eb267;
+  	background: #2e67b2;
   	text-transform: uppercase;
 }
 a.scroll-down {
@@ -257,61 +266,72 @@ a.scroll-down {
 }
 a.scroll-down div {
 	font-size: 30px;
-	color: #2eb267;
+	color: #99ccff;
 }
 
 /* ====04. SECTION ABOUT ==== */
 
 #sectionAbout {
-	background: #ffffff;
+	background: #0d0d0d;
 	padding-bottom: 75px;
 }
 
 .aboutMe {
 	padding: 10px 40px;
+    color: aquamarine;
+}
+
+.aboutMe p {
+    color: #99ccff;
+    font-size: 12.5px;
 }
 
 .aboutMe h1 {
   	letter-spacing: 5px;
-  	font-size: 10px;
-  	font-weight: 400;
+  	font-size: 20px;
+  	font-weight: 500;
   	text-transform: uppercase;
   	text-align: center;
-  	color: #777;
+  	color: #66ffff;
   	padding-bottom: 30px;
 }
 .textBlue {
-	color: #2eb267;
+	color: #99ccff;
 }
 .aboutProfile {
-	text-align: right;
+	text-align: center;
+    
 }
 .profileAv {
-	float: left;
+	float: none;
 	margin-right: 20px;
 	border-radius: 50%;
 	-webkit-border-radius:50%;
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 }
 .aboutProfile h3 {
 	margin-top: 20px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 3px;
 }
 .aboutProfile h4 {	
-	color: #2eb267;
+	color: #99ccff;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 12px;
 }
 .profileInfo {
 	padding-top: 30px;
+    color: aquamarine;
+}
+.profileInfo p {
+    font-size: 12.5px;
 }
 .aboutProfile h5 {
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 15px;
 }
@@ -336,47 +356,50 @@ a.scroll-down div {
 }
 .resumeEe .icon {
 	font-size: 25px;
-	background: #2eb267;
-	color: #ffffff;
+	background: #99ccff;
+	color: black;
 	padding: 5px 5px 0 5px;
 }
 .resumeEe h3 {
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 18px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
 	margin-top: 40px;
+    color: white;
 }
 .resumeEe h4 {
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: 2px;
 	margin-top: 0px;
 	margin-bottom: 5px;
+    color: #bbbbbb;
 }
 .resumeEe p {
 	line-height: 21px;
 	letter-spacing: 1px;
 	font-size: 13px;
 	margin-top: 5px;
+    color: #999999;
 }
 .resumeEd {text-align: right;}
 .resumeEd p {padding-left: 25px;}
 .resumeEd h3 {text-align: right;}
 .resumeEd .icon {margin-left: 20px;float: right;}
-.resumeEd {border-right: 1px solid #2eb267;}
+.resumeEd {border-right: 1px solid #99ccff;}
 
 .resumeEm {text-align: left;}
 .resumeEm p {padding-right: 25px;}
 .resumeEm h3 {text-align: left;}
 .resumeEm .icon {margin-right: 20px;float: left;}
-.resumeEm {border-left: 1px solid #2eb267;}
+.resumeEm {border-left: 1px solid #99ccff;}
 
 .resumeList {
 	-webkit-padding-start: 0px;
 	-moz-padding-start:0px;
 	padding: 50px;
-	background: #ffffff;
+	background: #000033;
 }
 .resumeList li {
 	display: block;
@@ -384,13 +407,13 @@ a.scroll-down div {
 	margin-bottom: 25px;
 }
 .resumePeriod {
-	background: #2eb267;
-	color: #fff;
+	background: #99ccff;
+	color: #000;
 	padding: 2px 4px;
 	font-size: 11px;
 }
 .resumeName {
-	color: #2eb267;
+	color: #99ccff;
 	font-size: 12px;
 	text-transform: lowercase;
 }
@@ -457,11 +480,11 @@ a.scroll-down div {
 	-o-transition: all 0.2s linear;
 }
 .capPreview {
-	color: #2eb267;
+	color: #99ccff;
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 3px;
-	border: 2px solid #2eb267;
+	border: 2px solid #99ccff;
 	padding: 5px;
 	margin-top: 10px;
 }
@@ -494,7 +517,7 @@ a.scroll-down div {
 }
 .current-filter {
   	color: #ffffff!important;
-  	border-bottom: 1px solid #2eb267;
+  	border-bottom: 1px solid #99ccff;
 }
 
 
@@ -508,7 +531,7 @@ a.scroll-down div {
 	text-align: center;
 }
 .servicesBox .icon{
-	color: #2eb267;
+	color: #0d0d0d;
 	font-size: 50px;
 	padding-bottom: 10px;
 }
@@ -527,9 +550,9 @@ a.scroll-down div {
 	padding: 25px 15px 0 15px;
 }
 .servicesColor {
-	background: #2eb267;
+	background: #99ccff;
 	padding: 2px 4px;
-	color: #ffffff;
+	color: #0d0d0d;
 	font-size: 12px;
 	letter-spacing: 2px;
 }
@@ -570,7 +593,7 @@ a.scroll-down div {
 
 
 #sectionContact {
-	background: #ffffff;
+	background: #0d0d0d;
 }
 .contactForm {margin: 0 0 50px 0;}
 .contactForm h1 {
@@ -589,7 +612,7 @@ a.scroll-down div {
 .footerLeft {
 	font-size: 13px;
 	font-weight: 400;
-	color: #777;
+	color: #99ccff;
 	padding-top: 15px;
 }
 .footerRight {
@@ -597,17 +620,17 @@ a.scroll-down div {
 	font-size: 30px;
 }
 .footerRight a{
-	color: #777;
+	color: #719fda;
 	padding: 0 10px;
 }
 .footerRight a:hover {
-	color: #fff;
+	color: aqua;
 }
 .contactRight {
 	padding-left: 5%;
 }
 .contactBox .icon {
-	color: #2eb267;
+	color: #99ccff;
 	font-size: 25px;
 }
 .contactBox {
@@ -620,11 +643,16 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 12px;
   	letter-spacing: 3px;
+    color: darkgrey;
+}
+.contactBox p {
+    color: aquamarine;
+    font-size: 14px;
 }
 
 /* ====GENERAL FORM STYLES==== */
 input, textarea, select {
-    color: #222;
+    color: white;
 	background: transparent;
 	vertical-align: top;
 	transition: all 0.25s ease-in-out;
@@ -647,7 +675,7 @@ input:focus, textarea:focus, select:focus {
 	transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
-	border: 1px solid #2eb267;
+	border: 1px solid aqua;
 }
 
 input.submit {
@@ -655,9 +683,9 @@ input.submit {
 	cursor: pointer;
 	position: relative;
     background: transparent;
-    color: #ffffff;
+    color: #0d0d0d;
     padding: 16px;
-    background: #2eb267;
+    background: aqua;
     margin: 20px 0;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -713,7 +741,7 @@ ul.errorMessages li {
   	font-size: 16px;
   	font-weight: 200;
   	text-align: left;
-  	color: #2eb267;
+  	color: #99ccff;
   	list-style: none;
   	line-height: 25px;
   }
@@ -736,7 +764,7 @@ ul.errorMessages li {
 	padding: 10px 14px;
 }
 .button-color {
-	background: #2eb267;
+	background: #99ccff;
 	text-transform: uppercase;
 	font-size: 11px;
 }
@@ -775,15 +803,17 @@ ul.errorMessages li {
 	height: 100%;
 	font-size: 12px;
 	line-height: 20px;
-	color: #fff;
+	color: black;
 	text-align: center;
-	background-color: #2eb267;
+	background-color: #99ccff;
 	-webkit-transition: width .6s ease;
 	transition: width .6s ease;
 }
 .progress {
 	margin-top: 5px;
-	background-color: #eee;
+	background-color: #0d0d0d;
+    box-sizing: border-box;
+    border: 1px solid aqua;
 }
 /* ========1.1 MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
 
