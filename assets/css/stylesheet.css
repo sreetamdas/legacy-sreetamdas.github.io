@@ -116,8 +116,8 @@ p {
 /* Menu Button */
 .menu-button {
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 0px;
+	left: 0px;
 	z-index: 1000;
 	padding: 0;
 	width: 60px;
@@ -126,7 +126,7 @@ p {
 	border: 0;
   	outline: 0;
 	color: #ffffff;
-	background: #0a0a0a;
+	background: #0d0d0d;
 }
 
 /* Menu */
@@ -139,8 +139,8 @@ p {
 	width: 240px;
 	padding: 20px 20px 10px 20px;
 	text-align: left;
-	top:70px;
-	left: 10px;
+	top: 60px;
+	left: 0px;
 	opacity: 0;
 	display: none;
 
@@ -187,6 +187,7 @@ p {
   	text-transform: uppercase;
   	padding-bottom: 10px;
   	margin-bottom: 10px;
+    color: white;
 }
 .sectionTitle h4 {
   	letter-spacing: 3px;
@@ -195,7 +196,7 @@ p {
   	text-transform: uppercase;
   	padding-bottom: 0px;
   	margin-bottom: 10px;
-  	color: #777;
+  	color: lightblue;
 }
 .sectionTitle .separatorlinecolor {
   	margin-bottom: 30px;
@@ -242,7 +243,7 @@ p {
 }
 .introHeading h1 {
   	color: #eee;
-  	font-size:40px;
+  	font-size: 50px;
   	font-weight: 900;
   	letter-spacing: 10px;
   	text-transform: uppercase;
@@ -259,6 +260,7 @@ p {
   	padding: 15px;
   	background: #2e67b2;
   	text-transform: uppercase;
+    border: 1px solid #99ccff;
 }
 a.scroll-down {
 	position: absolute;
@@ -362,7 +364,7 @@ a.scroll-down div {
 }
 .resumeEe h3 {
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 22px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
 	margin-top: 40px;
@@ -399,7 +401,7 @@ a.scroll-down div {
 	-webkit-padding-start: 0px;
 	-moz-padding-start:0px;
 	padding: 50px;
-	background: #000033;
+	background: #0d0d0d;
 }
 .resumeList li {
 	display: block;
@@ -524,14 +526,14 @@ a.scroll-down div {
 /* ========07. SECTION SERVICES========== */
 
 #sectionServices {
-	background: #ffffff;
+	background: #0d0d0d;
 	padding: 50px 0 75px 0;
 }
 .servicesRow {
 	text-align: center;
 }
 .servicesBox .icon{
-	color: #0d0d0d;
+	color: aqua;
 	font-size: 50px;
 	padding-bottom: 10px;
 }
@@ -545,9 +547,11 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 14px;
   	letter-spacing: 3px;
+    color: aquamarine;
 }
 .servicesBox p {
 	padding: 25px 15px 0 15px;
+    color: white;
 }
 .servicesColor {
 	background: #99ccff;
@@ -560,17 +564,13 @@ a.scroll-down div {
 /* ====08. SECTION STATISTCS ==== */
 
 #sectionStats {
-	background-color: #eeeeee;
- 	background-image: url(../images/01.jpg);
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	background-position: 50% 80%;
- 	color: #ffffff;
+	background-color: #0d0d0d;
+ 	color: aqua;
  	text-align: center;
  	padding: 50px 0;
 }
 #sectionStats .col-md-2 {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #99ccff;
 }
 #sectionStats .col-md-2-last { border-right: 0;}
 
