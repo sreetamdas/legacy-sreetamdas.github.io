@@ -36,18 +36,18 @@ body {
 	background-color: #1a1a1a;
 }
 a {
-  	color: aqua;
+  	color: #ff9933;
   	-webkit-transition: 0.3s;
   	-moz-transition: 0.3s;
   	transition: 0.3s;
 }
 a:hover {
-  	color: aquamarine;
+  	color: #ff9900;
   	text-decoration:none;
 }
 
 a:visited {
-    color: aquamarine;
+    color: #ff9900;
     text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ p {
 	text-decoration: none;
 }
 .menu-nav li.active a {
-	border-bottom: 1px solid #99ccff;
+	border-bottom: 1px solid #ff6600;
 	color: #ffffff;
 }
 
@@ -205,7 +205,7 @@ p {
   	width: 75px;
   	height: 2px;
   	margin: 0 auto;
-  	background: #99ccff;
+  	background: #ff6600;
 }
 .separatorlinewhite {
   	width: 100px;
@@ -256,11 +256,11 @@ p {
 	font-size: 12px;
   	font-weight: 300;
   	letter-spacing: 5px;
-  	color: #ffffff;
+  	color: black;
   	padding: 15px;
-  	background: #2e67b2;
+  	background: #ff9933;
   	text-transform: uppercase;
-    border: 1px solid #99ccff;
+    border: 1px solid #ff6600;
 }
 a.scroll-down {
 	position: absolute;
@@ -268,7 +268,7 @@ a.scroll-down {
 }
 a.scroll-down div {
 	font-size: 30px;
-	color: #99ccff;
+	color: #ff6600;
 }
 
 /* ====04. SECTION ABOUT ==== */
@@ -280,11 +280,11 @@ a.scroll-down div {
 
 .aboutMe {
 	padding: 10px 40px;
-    color: aquamarine;
+    color: #ff9900;
 }
 
 .aboutMe p {
-    color: #99ccff;
+    color: #ff6600;
     font-size: 12.5px;
 }
 
@@ -294,11 +294,11 @@ a.scroll-down div {
   	font-weight: 500;
   	text-transform: uppercase;
   	text-align: center;
-  	color: #66ffff;
+  	color: #ffaa00;
   	padding-bottom: 30px;
 }
 .textBlue {
-	color: #99ccff;
+	color: #ff6600;
 }
 .aboutProfile {
 	text-align: center;
@@ -317,16 +317,17 @@ a.scroll-down div {
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 3px;
+    color: #ffbb33;
 }
 .aboutProfile h4 {	
-	color: #99ccff;
+	color: #ff6600;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-size: 12px;
 }
 .profileInfo {
 	padding-top: 30px;
-    color: aquamarine;
+    color: #ff9900;
 }
 .profileInfo p {
     font-size: 12.5px;
@@ -358,7 +359,7 @@ a.scroll-down div {
 }
 .resumeEe .icon {
 	font-size: 25px;
-	background: #99ccff;
+	background: #ff6600;
 	color: black;
 	padding: 5px 5px 0 5px;
 }
@@ -389,13 +390,13 @@ a.scroll-down div {
 .resumeEd p {padding-left: 25px;}
 .resumeEd h3 {text-align: right;}
 .resumeEd .icon {margin-left: 20px;float: right;}
-.resumeEd {border-right: 1px solid #99ccff;}
+.resumeEd {border-right: 1px solid #ff6600;}
 
 .resumeEm {text-align: left;}
 .resumeEm p {padding-right: 25px;}
 .resumeEm h3 {text-align: left;}
 .resumeEm .icon {margin-right: 20px;float: left;}
-.resumeEm {border-left: 1px solid #99ccff;}
+.resumeEm {border-left: 1px solid #ff6600;}
 
 .resumeList {
 	-webkit-padding-start: 0px;
@@ -409,13 +410,13 @@ a.scroll-down div {
 	margin-bottom: 25px;
 }
 .resumePeriod {
-	background: #99ccff;
+	background: #ff6600;
 	color: #000;
 	padding: 2px 4px;
 	font-size: 11px;
 }
 .resumeName {
-	color: #99ccff;
+	color: #ff6600;
 	font-size: 12px;
 	text-transform: lowercase;
 }
@@ -482,11 +483,11 @@ a.scroll-down div {
 	-o-transition: all 0.2s linear;
 }
 .capPreview {
-	color: #99ccff;
+	color: #ff6600;
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 3px;
-	border: 2px solid #99ccff;
+	border: 2px solid #ff6600;
 	padding: 5px;
 	margin-top: 10px;
 }
@@ -519,7 +520,7 @@ a.scroll-down div {
 }
 .current-filter {
   	color: #ffffff!important;
-  	border-bottom: 1px solid #99ccff;
+  	border-bottom: 1px solid #ff6600;
 }
 
 
@@ -533,7 +534,7 @@ a.scroll-down div {
 	text-align: center;
 }
 .servicesBox .icon{
-	color: aqua;
+	color: #ff9933;
 	font-size: 50px;
 	padding-bottom: 10px;
 }
@@ -547,14 +548,14 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 14px;
   	letter-spacing: 3px;
-    color: aquamarine;
+    color: #ff9900;
 }
 .servicesBox p {
 	padding: 25px 15px 0 15px;
     color: white;
 }
 .servicesColor {
-	background: #99ccff;
+	background: #ff6600;
 	padding: 2px 4px;
 	color: #0d0d0d;
 	font-size: 12px;
@@ -565,12 +566,12 @@ a.scroll-down div {
 
 #sectionStats {
 	background-color: #0d0d0d;
- 	color: aqua;
+ 	color: #ff8000;
  	text-align: center;
  	padding: 50px 0;
 }
 #sectionStats .col-md-2 {
-	border-right: 1px solid #99ccff;
+	border-right: 1px solid #ff6600;
 }
 #sectionStats .col-md-2-last { border-right: 0;}
 
@@ -606,13 +607,16 @@ a.scroll-down div {
 }
 .contactFooter {
 	background-color: #0a0a0a;
-	padding: 40px 0 30px 0;
+	padding: 10px 0 10px 0;
 	color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 .footerLeft {
 	font-size: 13px;
 	font-weight: 400;
-	color: #99ccff;
+	color: #ff6600;
 	padding-top: 15px;
 }
 .footerRight {
@@ -620,17 +624,17 @@ a.scroll-down div {
 	font-size: 30px;
 }
 .footerRight a{
-	color: #719fda;
+	color: #ff9933;
 	padding: 0 10px;
 }
 .footerRight a:hover {
-	color: aqua;
+	color: #ff9933;
 }
 .contactRight {
 	padding-left: 5%;
 }
 .contactBox .icon {
-	color: #99ccff;
+	color: #ff6600;
 	font-size: 25px;
 }
 .contactBox {
@@ -643,10 +647,10 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 12px;
   	letter-spacing: 3px;
-    color: darkgrey;
+    color: darkgray;
 }
 .contactBox p {
-    color: aquamarine;
+    color: #ff9900;
     font-size: 14px;
 }
 
@@ -675,7 +679,7 @@ input:focus, textarea:focus, select:focus {
 	transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
-	border: 1px solid aqua;
+	border: 1px solid #ff9933;
 }
 
 input.submit {
@@ -685,7 +689,7 @@ input.submit {
     background: transparent;
     color: #0d0d0d;
     padding: 16px;
-    background: aqua;
+    background: #ff9933;
     margin: 20px 0;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -741,7 +745,7 @@ ul.errorMessages li {
   	font-size: 16px;
   	font-weight: 200;
   	text-align: left;
-  	color: #99ccff;
+  	color: #ff6600;
   	list-style: none;
   	line-height: 25px;
   }
@@ -764,7 +768,7 @@ ul.errorMessages li {
 	padding: 10px 14px;
 }
 .button-color {
-	background: #99ccff;
+	background: #ff6600;
 	text-transform: uppercase;
 	font-size: 11px;
 }
@@ -805,7 +809,7 @@ ul.errorMessages li {
 	line-height: 20px;
 	color: black;
 	text-align: center;
-	background-color: #99ccff;
+	background-color: #ff6600;
 	-webkit-transition: width .6s ease;
 	transition: width .6s ease;
 }
@@ -813,7 +817,7 @@ ul.errorMessages li {
 	margin-top: 5px;
 	background-color: #0d0d0d;
     box-sizing: border-box;
-    border: 1px solid aqua;
+    border: 1px solid #ffaa00;
 }
 /* ========1.1 MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
 
