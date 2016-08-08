@@ -36,14 +36,23 @@ body {
 	background-color: #1a1a1a;
 }
 a {
-  	color: #222222;
+  	color: #ff9933;
   	-webkit-transition: 0.3s;
   	-moz-transition: 0.3s;
   	transition: 0.3s;
 }
 a:hover {
-  	color: #2eb267;
+  	color: #ff9900;
   	text-decoration:none;
+}
+
+a:visited {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 hr {
@@ -107,8 +116,8 @@ p {
 /* Menu Button */
 .menu-button {
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 0px;
+	left: 0px;
 	z-index: 1000;
 	padding: 0;
 	width: 60px;
@@ -117,7 +126,7 @@ p {
 	border: 0;
   	outline: 0;
 	color: #ffffff;
-	background: #0a0a0a;
+	background: #0d0d0d;
 }
 
 /* Menu */
@@ -130,8 +139,8 @@ p {
 	width: 240px;
 	padding: 20px 20px 10px 20px;
 	text-align: left;
-	top:70px;
-	left: 10px;
+	top: 60px;
+	left: 0px;
 	opacity: 0;
 	display: none;
 
@@ -154,7 +163,7 @@ p {
 	text-decoration: none;
 }
 .menu-nav li.active a {
-	border-bottom: 1px solid #2eb267;
+	border-bottom: 1px solid #ff6600;
 	color: #ffffff;
 }
 
@@ -173,20 +182,21 @@ p {
 }
 .sectionTitle h1 {
   	letter-spacing: 5px;
-  	font-size: 18px;
+  	font-size: 38px;
   	font-weight: 600;
   	text-transform: uppercase;
   	padding-bottom: 10px;
   	margin-bottom: 10px;
+    color: white;
 }
 .sectionTitle h4 {
   	letter-spacing: 3px;
-  	font-size: 10px;
+  	font-size: 18px;
   	font-weight: 400;
   	text-transform: uppercase;
   	padding-bottom: 0px;
   	margin-bottom: 10px;
-  	color: #777;
+  	color: lightblue;
 }
 .sectionTitle .separatorlinecolor {
   	margin-bottom: 30px;
@@ -195,7 +205,7 @@ p {
   	width: 75px;
   	height: 2px;
   	margin: 0 auto;
-  	background: #2eb267;
+  	background: #ff6600;
 }
 .separatorlinewhite {
   	width: 100px;
@@ -233,7 +243,7 @@ p {
 }
 .introHeading h1 {
   	color: #eee;
-  	font-size:40px;
+  	font-size: 50px;
   	font-weight: 900;
   	letter-spacing: 10px;
   	text-transform: uppercase;
@@ -246,10 +256,11 @@ p {
 	font-size: 12px;
   	font-weight: 300;
   	letter-spacing: 5px;
-  	color: #ffffff;
+  	color: black;
   	padding: 15px;
-  	background: #2eb267;
+  	background: #ff9933;
   	text-transform: uppercase;
+    border: 1px solid #ff6600;
 }
 a.scroll-down {
 	position: absolute;
@@ -257,61 +268,73 @@ a.scroll-down {
 }
 a.scroll-down div {
 	font-size: 30px;
-	color: #2eb267;
+	color: #ff6600;
 }
 
 /* ====04. SECTION ABOUT ==== */
 
 #sectionAbout {
-	background: #ffffff;
+	background: #0d0d0d;
 	padding-bottom: 75px;
 }
 
 .aboutMe {
 	padding: 10px 40px;
+    color: #ff9900;
+}
+
+.aboutMe p {
+    color: #ff6600;
+    font-size: 12.5px;
 }
 
 .aboutMe h1 {
   	letter-spacing: 5px;
-  	font-size: 10px;
-  	font-weight: 400;
+  	font-size: 20px;
+  	font-weight: 500;
   	text-transform: uppercase;
   	text-align: center;
-  	color: #777;
+  	color: #ffaa00;
   	padding-bottom: 30px;
 }
 .textBlue {
-	color: #2eb267;
+	color: #ff6600;
 }
 .aboutProfile {
-	text-align: right;
+	text-align: center;
+    
 }
 .profileAv {
-	float: left;
+	float: none;
 	margin-right: 20px;
 	border-radius: 50%;
 	-webkit-border-radius:50%;
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 }
 .aboutProfile h3 {
 	margin-top: 20px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 3px;
+    color: #ffbb33;
 }
 .aboutProfile h4 {	
-	color: #2eb267;
+	color: #ff6600;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 12px;
 }
 .profileInfo {
 	padding-top: 30px;
+    color: #ff9900;
+}
+.profileInfo p {
+    font-size: 12.5px;
 }
 .aboutProfile h5 {
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 15px;
 }
@@ -336,47 +359,50 @@ a.scroll-down div {
 }
 .resumeEe .icon {
 	font-size: 25px;
-	background: #2eb267;
-	color: #ffffff;
+	background: #ff6600;
+	color: black;
 	padding: 5px 5px 0 5px;
 }
 .resumeEe h3 {
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 22px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
 	margin-top: 40px;
+    color: white;
 }
 .resumeEe h4 {
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: 2px;
 	margin-top: 0px;
 	margin-bottom: 5px;
+    color: #bbbbbb;
 }
 .resumeEe p {
 	line-height: 21px;
 	letter-spacing: 1px;
 	font-size: 13px;
 	margin-top: 5px;
+    color: #999999;
 }
 .resumeEd {text-align: right;}
 .resumeEd p {padding-left: 25px;}
 .resumeEd h3 {text-align: right;}
 .resumeEd .icon {margin-left: 20px;float: right;}
-.resumeEd {border-right: 1px solid #2eb267;}
+.resumeEd {border-right: 1px solid #ff6600;}
 
 .resumeEm {text-align: left;}
 .resumeEm p {padding-right: 25px;}
 .resumeEm h3 {text-align: left;}
 .resumeEm .icon {margin-right: 20px;float: left;}
-.resumeEm {border-left: 1px solid #2eb267;}
+.resumeEm {border-left: 1px solid #ff6600;}
 
 .resumeList {
 	-webkit-padding-start: 0px;
 	-moz-padding-start:0px;
 	padding: 50px;
-	background: #ffffff;
+	background: #0d0d0d;
 }
 .resumeList li {
 	display: block;
@@ -384,13 +410,13 @@ a.scroll-down div {
 	margin-bottom: 25px;
 }
 .resumePeriod {
-	background: #2eb267;
-	color: #fff;
+	background: #ff6600;
+	color: #000;
 	padding: 2px 4px;
 	font-size: 11px;
 }
 .resumeName {
-	color: #2eb267;
+	color: #ff6600;
 	font-size: 12px;
 	text-transform: lowercase;
 }
@@ -457,11 +483,11 @@ a.scroll-down div {
 	-o-transition: all 0.2s linear;
 }
 .capPreview {
-	color: #2eb267;
+	color: #ff6600;
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 3px;
-	border: 2px solid #2eb267;
+	border: 2px solid #ff6600;
 	padding: 5px;
 	margin-top: 10px;
 }
@@ -494,21 +520,21 @@ a.scroll-down div {
 }
 .current-filter {
   	color: #ffffff!important;
-  	border-bottom: 1px solid #2eb267;
+  	border-bottom: 1px solid #ff6600;
 }
 
 
 /* ========07. SECTION SERVICES========== */
 
 #sectionServices {
-	background: #ffffff;
+	background: #0d0d0d;
 	padding: 50px 0 75px 0;
 }
 .servicesRow {
 	text-align: center;
 }
 .servicesBox .icon{
-	color: #2eb267;
+	color: #ff9933;
 	font-size: 50px;
 	padding-bottom: 10px;
 }
@@ -522,14 +548,16 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 14px;
   	letter-spacing: 3px;
+    color: #ff9900;
 }
 .servicesBox p {
 	padding: 25px 15px 0 15px;
+    color: white;
 }
 .servicesColor {
-	background: #2eb267;
+	background: #ff6600;
 	padding: 2px 4px;
-	color: #ffffff;
+	color: #0d0d0d;
 	font-size: 12px;
 	letter-spacing: 2px;
 }
@@ -537,17 +565,13 @@ a.scroll-down div {
 /* ====08. SECTION STATISTCS ==== */
 
 #sectionStats {
-	background-color: #eeeeee;
- 	background-image: url(../images/01.jpg);
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	background-position: 50% 80%;
- 	color: #ffffff;
+	background-color: #0d0d0d;
+ 	color: #ff8000;
  	text-align: center;
  	padding: 50px 0;
 }
 #sectionStats .col-md-2 {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #ff6600;
 }
 #sectionStats .col-md-2-last { border-right: 0;}
 
@@ -570,7 +594,7 @@ a.scroll-down div {
 
 
 #sectionContact {
-	background: #ffffff;
+	background: #0d0d0d;
 }
 .contactForm {margin: 0 0 50px 0;}
 .contactForm h1 {
@@ -583,13 +607,16 @@ a.scroll-down div {
 }
 .contactFooter {
 	background-color: #0a0a0a;
-	padding: 40px 0 30px 0;
+	padding: 10px 0 10px 0;
 	color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 .footerLeft {
 	font-size: 13px;
 	font-weight: 400;
-	color: #777;
+	color: #ff6600;
 	padding-top: 15px;
 }
 .footerRight {
@@ -597,17 +624,17 @@ a.scroll-down div {
 	font-size: 30px;
 }
 .footerRight a{
-	color: #777;
+	color: #ff9933;
 	padding: 0 10px;
 }
 .footerRight a:hover {
-	color: #fff;
+	color: #ff9933;
 }
 .contactRight {
 	padding-left: 5%;
 }
 .contactBox .icon {
-	color: #2eb267;
+	color: #ff6600;
 	font-size: 25px;
 }
 .contactBox {
@@ -620,11 +647,16 @@ a.scroll-down div {
   	font-weight: 600;
   	font-size: 12px;
   	letter-spacing: 3px;
+    color: darkgray;
+}
+.contactBox p {
+    color: #ff9900;
+    font-size: 14px;
 }
 
 /* ====GENERAL FORM STYLES==== */
 input, textarea, select {
-    color: #222;
+    color: white;
 	background: transparent;
 	vertical-align: top;
 	transition: all 0.25s ease-in-out;
@@ -647,7 +679,7 @@ input:focus, textarea:focus, select:focus {
 	transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
-	border: 1px solid #2eb267;
+	border: 1px solid #ff9933;
 }
 
 input.submit {
@@ -655,9 +687,9 @@ input.submit {
 	cursor: pointer;
 	position: relative;
     background: transparent;
-    color: #ffffff;
+    color: #0d0d0d;
     padding: 16px;
-    background: #2eb267;
+    background: #ff9933;
     margin: 20px 0;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -713,7 +745,7 @@ ul.errorMessages li {
   	font-size: 16px;
   	font-weight: 200;
   	text-align: left;
-  	color: #2eb267;
+  	color: #ff6600;
   	list-style: none;
   	line-height: 25px;
   }
@@ -736,7 +768,7 @@ ul.errorMessages li {
 	padding: 10px 14px;
 }
 .button-color {
-	background: #2eb267;
+	background: #ff6600;
 	text-transform: uppercase;
 	font-size: 11px;
 }
@@ -775,15 +807,17 @@ ul.errorMessages li {
 	height: 100%;
 	font-size: 12px;
 	line-height: 20px;
-	color: #fff;
+	color: black;
 	text-align: center;
-	background-color: #2eb267;
+	background-color: #ff6600;
 	-webkit-transition: width .6s ease;
 	transition: width .6s ease;
 }
 .progress {
 	margin-top: 5px;
-	background-color: #eee;
+	background-color: #0d0d0d;
+    box-sizing: border-box;
+    border: 1px solid #ffaa00;
 }
 /* ========1.1 MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
 
