@@ -1,0 +1,95 @@
+@font-face {
+    font-family: SharpUnity;
+    src: url(SharpUnity-Extrabold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnitySB;
+    src: url(SharpUnity-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnityBook;
+    src: url(SharpUnity-Book.ttf);
+}
+.sharpUnity {
+    font-family: SharpUnity;
+    text-transform: none;
+}
+
+.sharpUnitySB {
+    font-family: SharpUnitySB;
+    text-transform: none;
+}
+
+.sharpUnityBook {
+    font-family: SharpUnityBook;
+    text-transform: none;
+}
+
+.black {
+    color: black;
+}
+
+.darkgrey {
+    color: #3C4858;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.grey {
+    color: grey !important;
+}
+
+.smoke {
+    color: beige !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.special {
+    background-color: yellow;
+}
+
+#fullscreen {
+    min-height: 100%;
+}
+
+#heart {
+    color: red;
+    animation: heartbeat 1s infinite;
+
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: .85em;
+  }
+  20% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: .85em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  80% {
+    font-size: .85em;
+  }
+  100% {
+    font-size: .85em;
+  }
+}
