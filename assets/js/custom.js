@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
 
     var scroll_start = 0;
-    var startchange = $('#header-wow');
+    var startchange = $('#fullscreen');
     var offset = startchange.offset();
     if (startchange.length) {
         $(document).scroll(function () {
@@ -45,4 +45,16 @@ $(document).ready(function () {
     $("#linkedin").hover(function () {openOverlay('LinkedIn')}, function () {closeOverlay('LinkedIn')});
     $("#facebook").hover(function () {openOverlay('Facebook')}, function () {closeOverlay('Facebook')});
     $("#twitter").hover(function () {openOverlay('Twitter')}, function () {closeOverlay('Twitter')});
+
+
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing');
+    });
 });
