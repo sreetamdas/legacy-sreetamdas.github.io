@@ -12,10 +12,22 @@
     font-family: SharpUnityBook;
     src: url(SharpUnity-Book.ttf);
 }
+
+@font-face {
+    font-family: CircularBold;
+    src: url(CircularBold.ttf);
+}
+
+.circularBold {
+    font-family: CircularBold;
+    text-transform: none;
+}
+
 .sharpUnity {
     font-family: SharpUnity;
     text-transform: none;
 }
+
 
 .sharpUnitySB {
     font-family: SharpUnitySB;
@@ -40,6 +52,7 @@
 
 .white a:hover{
     color: black !important;
+    text-decoration: none !important;
 }
 
 .darkgrey {
@@ -159,7 +172,7 @@
 }
 
 .links-header a{
-    margin: 10px;
+    margin: 20px;
     color: white;
 }
 
@@ -214,4 +227,13 @@
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+
+.afterTyping.onScreen {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  transform: none;
 }

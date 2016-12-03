@@ -41,10 +41,26 @@ $(document).ready(function () {
 
     //
 
-    $("#github").hover(function () {openOverlay('GitHub')}, function () {closeOverlay('GitHub')});
-    $("#linkedin").hover(function () {openOverlay('LinkedIn')}, function () {closeOverlay('LinkedIn')});
-    $("#facebook").hover(function () {openOverlay('Facebook')}, function () {closeOverlay('Facebook')});
-    $("#twitter").hover(function () {openOverlay('Twitter')}, function () {closeOverlay('Twitter')});
+    $("#github").hover(function () {
+        openOverlay('GitHub')
+    }, function () {
+        closeOverlay('GitHub')
+    });
+    $("#linkedin").hover(function () {
+        openOverlay('LinkedIn')
+    }, function () {
+        closeOverlay('LinkedIn')
+    });
+    $("#facebook").hover(function () {
+        openOverlay('Facebook')
+    }, function () {
+        closeOverlay('Facebook')
+    });
+    $("#twitter").hover(function () {
+        openOverlay('Twitter')
+    }, function () {
+        closeOverlay('Twitter')
+    });
 
 
     $('a[href^="#"]').on('click', function (e) {
@@ -57,4 +73,19 @@ $(document).ready(function () {
             'scrollTop': $target.offset().top
         }, 500, 'swing');
     });
+
+    $('#typer').typeIt({
+//        strings: ["Front End Developer","Quizzer/ QuizMaster","Undergrad"," "],
+        speed: 10,
+//        breakLines: true,
+//        breakDelay: 2000,
+        autoStart: false
+    })
+    .tiType('Front End Developer, ')
+    .tiBreak()
+    .tiPause(200)
+    .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
+    .tiBreak()
+    .tiPause(100)
+    .tiType('Undergrad Student at NIT Warangal.');
 });
