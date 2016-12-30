@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
 
     var scroll_start = 0;
-    var startchange = $('#fullscreen');
+    var startchange = $('#top');
     var offset = startchange.offset();
     if (startchange.length) {
         $(document).scroll(function () {
@@ -41,6 +41,11 @@ $(document).ready(function () {
 
     //
 
+    $("#mail").hover(function () {
+        openOverlay('Mail')
+    }, function () {
+        closeOverlay('Mail')
+    });
     $("#github").hover(function () {
         openOverlay('GitHub')
     }, function () {
@@ -76,16 +81,17 @@ $(document).ready(function () {
 
     $('#typer').typeIt({
 //        strings: ["Front End Developer","Quizzer/ QuizMaster","Undergrad"," "],
-        speed: 10,
+        speed: 20,
+//        cursorSpeed: 0,
 //        breakLines: true,
 //        breakDelay: 2000,
         autoStart: false
     })
     .tiType('Front End Developer, ')
-    .tiBreak()
-    .tiPause(200)
+//    .tiBreak()
+    .tiPause(700)
     .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
     .tiBreak()
-    .tiPause(100)
-    .tiType('Undergrad Student at NIT Warangal.');
+    .tiPause(700)
+    .tiType('Undergrad Student at <a href="#" class="special" style="color: black">NIT Warangal</a>');
 });

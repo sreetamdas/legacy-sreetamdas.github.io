@@ -46,15 +46,10 @@
 .white {
     color: white;
 }
-.white a{
-    color: white;
-}
 
-.white a:hover{
-    color: black !important;
+a:hover {
     text-decoration: none !important;
 }
-
 .darkgrey {
     color: #3C4858;
 }
@@ -91,15 +86,15 @@
 }
 
 .special a{
-    color: black;
+    color: black !important;
 }
 
 .special a:hover{
-    color: black;
+    color: black !important;
     text-decoration: none;
 }
 
-#fullscreen {
+.fullscreen {
     min-height: 100%;
 }
 

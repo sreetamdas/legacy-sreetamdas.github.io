@@ -16,12 +16,12 @@
         ::-webkit-scrollbar {
             display: none;
         }
-
+        
         body {
             max-width: 100%;
             overflow-x: hidden;
         }
-
+        
         html,
         body {
             height: 100%;
@@ -31,31 +31,38 @@
 </head>
 
 <body class="landing-page" style="background-color: black">
-    <div id="fullscreen">
+    <div class="fullscreen" id="top">
         <div class="row">
-            <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                <h1 class="title sharpUnity white text-center" style="padding-top: 20%; font-size: 3rem">Hey!</h1>
-                <br>
-                <h1 class="title sharpUnity white text-center" style="font-size: 5rem">I'm <span class="special">Sreetam Das</span></h1>
+            <div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                <h1 class="title sharpUnity white text-center" style="padding-top: 20%; font-size: 2.5rem">Hey!</h1>
+                <h1 class="title sharpUnity white text-center" style="font-size: 5rem; padding-top: 10px">I'm <span class="special">Sreetam Das</span></h1>
+                <div>
+
+                </div>
             </div>
         </div>
-        <div class="text-center" id="header-wow" style="position: absolute; bottom: 0%; width: 100%"><a href="#main"><i class="fa fa-4x fa-angle-down white"></i></a></div>
+        <div class="text-center" id="header-wow" style="position: absolute; bottom: 0%; width: 100%">
+            <a href="#main"><i class="fa fa-4x fa-angle-down white"></i></a>
+        </div>
     </div>
     <nav class="navbar navbar-dark bg-black nav navbar-nav navbar-fixed-top" id="header" style="display: none">
-        <div class="links-header pull-right">
+        <div class="links-header pull-right white">
+            <a class="sharpUnity fa-3x white" id="mail">
+                Say Hi!
+            </a>
             <a href="#" id="github" class="social">
                 <i class="fa fa-3x fa-github"></i>
             </a>
             <a href="#">
-                <i class="fa fa-3x fa-linkedin" id="linkedin"></i>
+                <i class="fa fa-3x fa-linkedin-square" id="linkedin"></i>
             </a>
             <a href="https://bit.do/sreetamdas" id="facebook">
                 <i class="fa fa-3x fa-facebook"></i>
             </a>
-<!--
-            <a href="#" id="twitter">
+            <a href="https://twitter.com/_DasWhatSheSaid" id="twitter">
                 <i class="fa fa-3x fa-twitter"></i>
             </a>
+            <!--
             <a href="#Snapchat">
                 <i class="fa fa-3x fa-snapchat-ghost"></i>
             </a>
@@ -64,35 +71,38 @@
     </nav>
     <div id="myNav" class="overlay">
         <div class="overlay-content">
+            <h1 class="sharpUnity white" style="font-size: 5em; display: none" id="Mail">Let's meet up?</h1>
             <h1 class="sharpUnity white" style="font-size: 5em; display: none" id="GitHub">GitHub</h1>
             <h1 class="sharpUnity white" style="font-size: 5em; display: none" id="Facebook">Facebook</h1>
             <h1 class="sharpUnity white" style="font-size: 5em; display: none" id="Twitter">Twitter</h1>
             <h1 class="sharpUnity white" style="font-size: 5em; display: none" id="LinkedIn">LinkedIn</h1>
         </div>
     </div>
-    <div class="wrapper main row container-fluid display" id="main" style="padding-top: 10em">
+    <div class="wrapper main row container-fluid display fullscreen" id="main" style="padding-top: 9em">
         <!--        <a href="#fullscreen" style="padding-left: 80px; padding-top: 100px" class="white pull-left pull-down"><i class="fa fa-3x fa-angle-up"></i></a>-->
-        <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1 white">
-            <h1 class="title sharpUnity white text-left" style="padding-top: 10px; font-size: 4rem">I am a <span id="typer"></span></h1>
-<!--
-            <p class="sharpUnity" style="font-size: 1.4em">
-                I am a student at <span class="special"><a href="http://www.nitw.ac.in">NIT Warangal</a></span>, pursuing BTech in Metallurgy and Materials Engineering.
-                <br>
-                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud dexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                <br>
-                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud dexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaescat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                <span class="element"></span>
-            </p>
--->
-<!--            <a class="btn btn-outline-yellow btn-lg btn-block sharpUnity white">Resume</a>-->
-
-
+        <div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1 white">
+            <p class="title sharpUnity white text-left" style="padding-top: 90px; font-size: 3rem">I am a <span id="typer"></span></p>
+            <div class="text-center" id="header-wow" style="position: relative; top: 9em">
+                <a href="#love"><i class="fa fa-4x fa-angle-down white"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper main row container-fluid display fullscreen" id="love" style="padding-top: 12em">
+        <!--        <a href="#fullscreen" style="padding-left: 80px; padding-top: 100px" class="white pull-left pull-down"><i class="fa fa-3x fa-angle-up"></i></a>-->
+        <div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1 white">
+            <h1 class="sharpUnity" style="font-size: 2.8rem">
+                I love making beautiful websites
+            </h1>
+            <!--            <a class="btn btn-outline-yellow btn-lg btn-block sharpUnity">Resume</a>-->
+            <div class="text-center" id="header-wow" style="position: relative; top: 9em">
+                <a href="#main"><i class="fa fa-4x fa-angle-down white"></i></a>
+            </div>
         </div>
     </div>
 
 
     <footer class="footer text-center display" style="padding-top: 100px">
-<!--
+        <!--
         <div class="links container">
             <a href="https://bit.do/sreetamdas">
                 <i class="fa fa-3x fa-facebook"></i>
@@ -115,16 +125,6 @@
             Created with <a href="http://sreetamdas.github.io/Sweja" style="color: #ff4425"><i class="fa fa-heart"></i></a>, <i class="fa fa-coffee"></i> and <i class="fa fa-code"></i> by <span class="special">Sreetam Das</span>
         </div>
     </footer>
-    <script>
-        $(function () {
-            $(".element").typed({
-                strings: ["First sentence.", "Second sentence."],
-                typeSpeed: 0
-            });
-        });
-    </script>
-
-
 </body>
 
 <!--   Core JS Files   -->

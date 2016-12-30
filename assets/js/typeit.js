@@ -161,7 +161,7 @@
                 var t = this.s.cursorSpeed,
                     e = this;
                 ! function i() {
-                    e.el.find(".ti-cursor").fadeTo(t / 2, 0).fadeTo(t / 2, 1), e._to(i, t)
+                    e.el.find(".ti-cursor").fadeTo(t / 2, 0), e._to(i, t)
                 }()
             }
         },
