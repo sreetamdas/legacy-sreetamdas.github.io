@@ -79,23 +79,56 @@ $(document).ready(function () {
         }, 500, 'swing');
     });
 
+    var loves = ["making websites", "Sweja", "web designing"];
+    console.log("soooo");
+    
+    var i = 0;
+    
+    $(function () {
+        var hello = ["making websites", "Sweja", "web designing"];
+        var used = ["Sweja"];
+        var greeting = $('#loves');
+        var item;
+
+        function hey() {
+            var j = i%3;
+            console.log("j = " + j);
+            item = hello[j];
+            
+            greeting.html(item);
+            greeting.animate({
+                "opacity": "1"
+            }, 0);              //time to transition opacity
+        }
+
+        window.setInterval(function () {
+            i++;
+            greeting.animate({
+                "opacity": "0"
+            }, 0);              //time to transition opacity
+            setTimeout(hey, 0)
+        }, 300);        //interval between word change
+
+    });
+
+
     $('#typer').typeIt({
-//        strings: ["Front End Developer","Quizzer/ QuizMaster","Undergrad"," "],
-        speed: 20,
-//        cursorSpeed: 0,
-//        breakLines: true,
-//        breakDelay: 2000,
-        autoStart: false
-    })
-    .tiType('Front End Developer, ')
-//    .tiBreak()
-    .tiPause(1000)
-    .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
-    .tiPause(1000)
-    .tiDelete(4)
-    .tiPause(1000)
-    .tiType('YOLOLOLOLO')
-    .tiBreak()
-    .tiPause(1000)
-    .tiType('Undergrad Student at <a href="#" class="special" style="color: black">NIT Warangal</a>');
+            //        strings: ["Front End Developer","Quizzer/ QuizMaster","Undergrad"," "],
+            speed: 20,
+            //        cursorSpeed: 0,
+            //        breakLines: true,
+            //        breakDelay: 2000,
+            autoStart: false
+        })
+        .tiType('Front End Developer, ')
+        //    .tiBreak()
+        .tiPause(1000)
+        .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
+        .tiPause(1000)
+        .tiDelete(4)
+        .tiPause(1000)
+        .tiType('YOLOLOLOLO')
+        .tiBreak()
+        .tiPause(1000)
+        .tiType('Undergrad Student at <a href="#" class="special" style="color: black">NIT Warangal</a>');
 });
