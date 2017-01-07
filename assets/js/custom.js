@@ -89,9 +89,13 @@ $(document).ready(function () {
     })
     .tiType('Front End Developer, ')
 //    .tiBreak()
-    .tiPause(700)
+    .tiPause(1000)
     .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
+    .tiPause(1000)
+    .tiDelete(4)
+    .tiPause(1000)
+    .tiType('YOLOLOLOLO')
     .tiBreak()
-    .tiPause(700)
+    .tiPause(1000)
     .tiType('Undergrad Student at <a href="#" class="special" style="color: black">NIT Warangal</a>');
 });
