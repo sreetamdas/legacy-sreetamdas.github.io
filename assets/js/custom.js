@@ -85,13 +85,13 @@ $(document).ready(function () {
     var i = 0;
     
     $(function () {
-        var hello = ["making websites", "Sweja", "web designing"];
+        var hello = ["making websites", "Sweja", "web designing", "Google", "open source sofware", "HTML, CSS and JS", "Django"];
         var used = ["Sweja"];
         var greeting = $('#loves');
         var item;
 
         function hey() {
-            var j = i%3;
+            var j = i%(hello.length);
             console.log("j = " + j);
             item = hello[j];
             
