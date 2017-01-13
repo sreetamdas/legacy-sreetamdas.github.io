@@ -85,7 +85,7 @@ $(document).ready(function () {
     var i = 0;
     
     $(function () {
-        var hello = ["making websites", "Sweja", "web designing", "Google", "open source sofware", "HTML, CSS and JS", "Django"];
+        var hello = ["Making Websites", "Sweja", "Web Designing", "Google", "Open Source", "HTML, CSS and JS", "Django"];
         var used = ["Sweja"];
         var greeting = $('#loves');
         var item;
