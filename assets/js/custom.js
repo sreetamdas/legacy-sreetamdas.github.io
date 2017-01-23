@@ -79,13 +79,13 @@ $(document).ready(function () {
         }, 500, 'swing');
     });
 
-    var loves = ["making websites", "Sweja", "web designing"];
+//    var loves = ["making websites", "Sweja", "web designing"];
     console.log("soooo");
     
     var i = 0;
     
     $(function () {
-        var hello = ["Making Websites", "Sweja", "Web Designing", "Google", "Open Source", "HTML, CSS and JS", "Django"];
+        var hello = ["Making Websites", "Web Designing", "Google", "Open Source", "HTML, CSS and JS", "Django"];
         var used = ["Sweja"];
         var greeting = $('#loves');
         var item;
@@ -114,7 +114,7 @@ $(document).ready(function () {
 
     $('#typer').typeIt({
             //        strings: ["Front End Developer","Quizzer/ QuizMaster","Undergrad"," "],
-            speed: 20,
+            speed: 35,
             //        cursorSpeed: 0,
             //        breakLines: true,
             //        breakDelay: 2000,
@@ -123,12 +123,12 @@ $(document).ready(function () {
         .tiType('Front End Developer, ')
         //    .tiBreak()
         .tiPause(1000)
-        .tiType('<a href="#" class="special" style="color: black">Quizzer</a> and ')
+        .tiType('<a href="#" class="special" style="color: black">Quizzer</a> at ')
         .tiPause(1000)
-        .tiDelete(4)
+        .tiDelete(3)
         .tiPause(1000)
-        .tiType('YOLOLOLOLO')
+        .tiType('and <a href="#" class="special" style="color: black">Quizmaster.</a>')
         .tiBreak()
         .tiPause(1000)
-        .tiType('Undergrad Student at <a href="#" class="special" style="color: black">NIT Warangal</a>');
+        .tiType('I am currently an Undergrad Student at <br><a href="#" class="special" style="color: black">NIT Warangal</a>');
 });
