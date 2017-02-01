@@ -41,6 +41,12 @@ $(document).ready(function () {
 
     //
 
+    $("#resume").hover(function () {
+        openOverlay('Resume')
+    }, function () {
+        closeOverlay('Resume')
+    });
+
     $("#mail").hover(function () {
         openOverlay('Mail')
     }, function () {
@@ -130,5 +136,7 @@ $(document).ready(function () {
         .tiType('and <a href="#" class="special" style="color: black">Quizmaster.</a>')
         .tiBreak()
         .tiPause(1000)
-        .tiType('I am currently an Undergrad Student at <br><a href="#" class="special" style="color: black">NIT Warangal</a>');
+        .tiType('I am currently an Undergrad Student at')
+        .tiBreak()
+        .tiType('<a href="#" class="special" style="color: black">NIT Warangal</a>');
 });
