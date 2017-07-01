@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: SharpUnity;
     src: url(SharpUnity-Extrabold.ttf);
@@ -17,26 +18,21 @@
     font-family: CircularBold;
     src: url(CircularBold.ttf);
 }
-
-.circularBold {
-    font-family: CircularBold;
-    text-transform: none;
+*/
+body {
+    font-family: 'Josefin Slab', sans-serif;
+    font-weight: 100;
 }
 
-.sharpUnity {
-    font-family: SharpUnity;
-    text-transform: none;
+.Slab_stronger {
+    font-family: 'Josefin Slab', sans-serif;
+    font-weight: 300;
 }
 
 
-.sharpUnitySB {
-    font-family: SharpUnitySB;
-    text-transform: none;
-}
-
-.sharpUnityBook {
-    font-family: SharpUnityBook;
-    text-transform: none;
+.Slab_stronger {
+    font-family: 'Josefin Slab', sans-serif;
+    font-weight: 600;
 }
 
 .black {
@@ -85,8 +81,7 @@ a:hover {
 .special {
     background-color: yellow;
     color: black;
-    border-left: 0.2em solid yellow;
-    border-right: 0.2em solid yellow;
+    border: 0.2em solid yellow;
 }
 
 .special a{
@@ -171,37 +166,39 @@ a:hover {
 }
 
 .links-header a{
-    margin: 15px;
+    margin: 10px;
     color: black;
 }
 
 .bg-white {
-    background-color: white;
+    background-color: transparent;
 }
 
 #header {
     margin-bottom: 10px;
 }
 
-#stackoverflow:hover {
+/*
+#stackoverflow {
     color: #f48024 !important;
 }
 
-#github:hover{
+#github {
     color: #333 !important;
 }
 
-#linkedin:hover{
+#linkedin {
     color: #0077b5 !important;
 }
 
-#facebook:hover{
+#facebook {
     color: #3b5998 !important;
 }
 
-#twitter:hover{
+#twitter {
     color: #1da1f2 !important;
 }
+*/
 
 #coffee {
     color: #6f4e37;

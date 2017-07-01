@@ -1,3 +1,25 @@
+/**
+    ___    __    _____ _  __
+   /   |  / /   / ____/ |/ /
+  / /| | / /   / __/  |   /
+ / ___ |/ /___/ /___ /   |
+/_/  |_/_____/_____//_/|_|
+    ___ __ ___   _____ ___    ____  _____ __  ____  __ ___
+   /  |/  /   | / ____/   |  / __ \/_  __/ / / / / / / __ \
+  / /|_/ / /| |/ /   / /| | / /_/ / / / / /_/ / / / / /_/ /
+ / /  / / ___ / /___/ ___ |/ __ _/ / / / __  / /_/ / __ _/
+/_/  /_/_/  |_\____/_/  |_/_/ |_| /_/ /_/ /_/\____/_/ |_|
+
+Alex MacArthur, a web developer in Nashville, created this plugin.
+
+Like it? Head to http://macarthur.me/typeit for more information.
+
+Github: https://github.com/alexmacarthur
+Twitter: amacarthur
+Email: alex@macarthur.me
+
+**/
+
 ! function (t, e) {
     "use strict";
     var i = t(document);
@@ -73,6 +95,9 @@
         _print: function (e) {
             this.inTag ? (t(this.tag, this.el).last().append(e), this.tagCount < this.tagDuration ? this.tagCount++ : this.inTag = !1) : this.insert(e)
         },
+        empty: function () {
+            this.tel.html(""), this._executeQueue()
+        },
         "delete": function (t) {
             this.deleteTimeout = setTimeout(function () {
                 this._setPace();
@@ -104,9 +129,9 @@
                     break
                 }
                 if (this.tel.html().indexOf("></") > -1)
-                    for (var a = this.tel.html().indexOf("></") - 2; a >= 0; a--)
-                        if ("<" === i[a]) {
-                            i.splice(a, i.length - a);
+                    for (var u = this.tel.html().indexOf("></") - 2; u >= 0; u--)
+                        if ("<" === i[u]) {
+                            i.splice(u, i.length - u);
                             break
                         }
                 this.tel.html(i.join("")), s > (t === e ? 0 : 2) ? this["delete"](t === e ? e : t - 1) : this._executeQueue()
@@ -126,13 +151,13 @@
             n.right = n.left + h, n.bottom = n.top + s;
             var r = !(i.right < n.left || i.left > n.right || i.bottom < n.top || i.top > n.bottom);
             if (!r) return !1;
-            var a = {
+            var u = {
                 top: Math.min(1, (n.bottom - i.top) / s),
                 bottom: Math.min(1, (i.bottom - n.top) / s),
                 left: Math.min(1, (n.right - i.left) / h),
                 right: Math.min(1, (i.right - n.left) / h)
             };
-            return a.left * a.right >= 1 && a.top * a.bottom >= 1
+            return u.left * u.right >= 1 && u.top * u.bottom >= 1
         },
         _executeQueue: function () {
             if (this.queueIndex < this.queue.length) {
@@ -161,7 +186,7 @@
                 var t = this.s.cursorSpeed,
                     e = this;
                 ! function i() {
-                    e.el.find(".ti-cursor").fadeTo(t / 2, 0), e._to(i, t)
+                    e.el.find(".ti-cursor").fadeTo(t / 2, 0).fadeTo(t / 2, 1), e._to(i, t)
                 }()
             }
         },
@@ -189,6 +214,9 @@
     }, t.fn.tiType = function (s) {
         var h = t(this).data("typeit");
         return h === e ? i : (h.queue.push([h.type, s]), this)
+    }, t.fn.tiEmpty = function () {
+        var s = t(this).data("typeit");
+        return s === e ? i : (s.queue.push([s.empty]), this)
     }, t.fn.tiDelete = function (s) {
         var h = t(this).data("typeit");
         return h === e ? i : (h.queue.push([h["delete"], s]), this)
