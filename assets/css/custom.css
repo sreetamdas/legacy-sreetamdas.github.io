@@ -252,3 +252,27 @@ canvas {
   height: 300px;
   cursor: pointer;
 }
+
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+}
+ 
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
+
+.mobile-links a {
+    margin: 10px;
+    color: black;
+}
