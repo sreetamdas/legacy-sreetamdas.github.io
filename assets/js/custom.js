@@ -11,7 +11,8 @@ $(document).ready(function () {
         "Mail": ["mail", "Let's Meet Up?", "black", "white"],
         "Resume": ["resume", "Hire Me!", "black", "white"],
         "Medium": ["medium", "Medium", "#00ab6c", "white"],
-        "Angel": ["angel", "Angel", "white", "black"]
+        "Angel": ["angel", "Angel", "white", "black"],
+        "Amazon": ["amazon", "<span style='font-size: 0.6em'>Buy Me Something from My Amazon Wishlist!<br>Thanks!</span>", "#ff9900", "black"]
     }
     
     
