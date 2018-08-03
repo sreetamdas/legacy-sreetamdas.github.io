@@ -1,0 +1,412 @@
+body,
+html {
+    overflow: hidden;
+    height: 100%
+}
+
+h1,
+h2,
+strong {
+    font-weight: 400
+}
+
+.wrapper,
+body,
+html {
+    height: 100%
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0
+}
+
+footer,
+h2,
+ul.numchuck_skills,
+ul.numchuck_skills li {
+    position: absolute;
+    opacity: 0
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block
+}
+
+.touch body {
+    -webkit-text-size-adjust: none
+}
+
+:focus {
+    -moz-outline-style: none;
+    outline: 0
+}
+
+body {
+    font-family: Ginger, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -.01em
+}
+
+h2,
+strong,
+ul.numchuck_skills {
+    font-family: GingerBold, Helvetica, Arial, sans-serif
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    -webkit-transition: color 1.2s ease-in-out, border-color 1.2s ease-in-out;
+    -moz-transition: color 1.2s ease-in-out, border-color 1.2s ease-in-out;
+    -ms-transition: color 1.2s ease-in-out, border-color 1.2s ease-in-out;
+    -o-transition: color 1.2s ease-in-out, border-color 1.2s ease-in-out;
+    transition: color 1.2s ease-in-out, border-color 1.2s ease-in-out;
+    -webkit-tap-highlight-color: transparent
+}
+
+a:hover {
+    color: #38c3f0;
+    border-color: #38c3f0;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+a img {
+    border: 0
+}
+
+img {
+    max-width: 100%
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 35px;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-out 1 .1s;
+    -ms-animation: fadeIn 2s ease-out 1 .1s;
+    animation: fadeIn 2s ease-out 1 .1s;
+    animation-fill-mode: forwards
+}
+
+h1 a {
+    border-color: #ccc
+}
+
+h1 small {
+    font-size: 70%
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 50px;
+    max-width: 1000px;
+    top: 60%;
+    left: 120px;
+    -webkit-animation: fadeIn 2s ease-out 1 1.3s;
+    -ms-animation: fadeIn 2s ease-out 1 1.3s;
+    animation: fadeIn 2s ease-out 1 1.3s;
+    animation-fill-mode: forwards
+}
+
+.wrapper {
+    padding: 80px 80px 0 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul.numchuck_skills {
+    width: 100%;
+    font-size: calc(100vw / 6);
+    line-height: 180px;
+    color: #78ffee;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -.04em;
+    left: -30px;
+    top: 25%;
+    white-space: nowrap;
+    -webkit-animation: fadeIn 2s ease-out 1 .6s;
+    -ms-animation: fadeIn 2s ease-out 1 .6s;
+    animation: fadeIn 2s ease-out 1 .6s;
+    animation-fill-mode: forwards;
+    pointer-events: none
+}
+
+ul.numchuck_skills li {
+    width: 100%;
+    -webkit-animation: rotateWord 12s cubic-bezier(1, 0, 0, 1) infinite 0s;
+    -ms-animation: rotateWord 12s cubic-bezier(1, 0, 0, 1) infinite 0s;
+    animation: rotateWord 12s cubic-bezier(1, 0, 0, 1) infinite 0s
+}
+
+ul.numchuck_skills li:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s
+}
+
+ul.numchuck_skills li:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+ul.numchuck_skills li:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s
+}
+
+footer {
+    bottom: 80px;
+    left: 120px;
+    -webkit-animation: fadeIn 1s ease-out 1 1.6s;
+    -ms-animation: fadeIn 1s ease-out 1 1.6s;
+    animation: fadeIn 1s ease-out 1 1.6s;
+    animation-fill-mode: forwards
+}
+
+::-moz-selection {
+    background: rgba(0, 0, 0, .1)!important
+}
+
+::selection {
+    background: rgba(0, 0, 0, .1)
+}
+
+li::selection,
+ul::selection {
+    background: rgba(0, 0, 0, 0)
+}
+
+::-webkit-input-placeholder {
+    color: #999
+}
+
+:-moz-placeholder {
+    color: #999
+}
+
+::-moz-placeholder {
+    color: #999
+}
+
+:-ms-input-placeholder {
+    color: #999
+}
+
+@-webkit-keyframes rotateWord {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    4% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px)
+    }
+    27%,
+    7% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+    32% {
+        opacity: 0;
+        -webkit-transform: translateY(30px)
+    }
+}
+
+@-ms-keyframes rotateWord {
+    0%,
+    100%,
+    32%,
+    4%,
+    80% {
+        opacity: 0
+    }
+    4% {
+        -ms-transform: translateY(-30px)
+    }
+    27%,
+    7% {
+        opacity: 1;
+        -ms-transform: translateY(0)
+    }
+    32% {
+        -ms-transform: translateY(30px)
+    }
+}
+
+@keyframes rotateWord {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    4% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    27%,
+    7% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    32% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px)
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -ms-transform: translateY(-30px)
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@font-face {
+    font-family: Ginger;
+    src: url(_inc/fonts/f37ginger-regular-webfont.eot);
+    src: url(_inc/fonts/f37ginger-regular-webfont.eot?#iefix) format("embedded-opentype"), url(_inc/fonts/f37ginger-regular-webfont.woff) format("woff"), url(_inc/fonts/f37ginger-regular-webfont.ttf) format("truetype"), url(_inc/fonts/f37ginger-regular-webfont.svg#f37ginger-bold) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: GingerBold;
+    src: url(_inc/fonts/f37ginger-bold-webfont.eot);
+    src: url(_inc/fonts/f37ginger-bold-webfont.eot?#iefix) format("embedded-opentype"), url(_inc/fonts/f37ginger-bold-webfont.woff) format("woff"), url(_inc/fonts/f37ginger-bold-webfont.ttf) format("truetype"), url(_inc/fonts/f37ginger-bold-webfont.svg#f37ginger-bold) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.ie * {
+    opacity: 1!important
+}
+
+.ie .numchuck_skills {
+    display: none!important
+}
+
+@media screen and (max-width:1200px) {
+    ul.numchuck_skills {
+        left: -20px
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 40px
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .wrapper {
+        padding: 80px 80px 0
+    }
+    footer,
+    h2 {
+        left: 80px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wrapper {
+        padding: 40px 20px
+    }
+    .hide,
+    footer {
+        display: none
+    }
+    h1 small {
+        display: block;
+        line-height: 25px
+    }
+    ul.numchuck_skills {
+        font-size: calc(100vw / 6);
+        left: -5px;
+        line-height: 100px;
+        height: 100px;
+        top: auto;
+        bottom: 10%
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 34px;
+        left: 20px;
+        bottom: auto;
+        top: 35%
+    }
+}
