@@ -6,9 +6,23 @@ body {
 	margin: 0;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 /* h1, h2, h3, h4, h5, h6, p, div {
 	margin-bottom: 0;
 } */
+
+a {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: white;
+}
 
 .karla {
 	font-family: "Karla";
