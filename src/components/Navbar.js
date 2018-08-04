@@ -87,6 +87,14 @@ export default class CustomNav extends React.Component {
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto white" navbar>
+							<NavItem>
+								<a
+									href="mailto:sreetamdas@gmail.com"
+									style={{ fontSize: "25px" }}
+								>
+									<NavLink className="white">Say Hi!</NavLink>
+								</a>
+							</NavItem>
 							{Object.keys(this.state.portfolio).map(index => (
 								<this.Navlinks index={index} key={index} />
 							))}

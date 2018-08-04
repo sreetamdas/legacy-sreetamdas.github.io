@@ -11,7 +11,9 @@ class Home extends React.Component {
 						style={{ fontSize: "40px" }}
 						className="black-bg white full-page"
 					>
-						<div style={{ paddingTop: "200px" }}>Home!</div>
+						<div style={{ paddingTop: "200px" }}>
+							Hey!<br />I'm Sreetam Das.
+						</div>
 					</div>
 				</div>
 			</React.Fragment>
