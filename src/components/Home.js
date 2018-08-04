@@ -5,8 +5,15 @@ class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Navbar />
-				<div style={{ fontSize: "40px" }}>Home!</div>
+				<div className="black-bg white">
+					<Navbar />
+					<div
+						style={{ fontSize: "40px" }}
+						className="black-bg white full-page"
+					>
+						<div style={{ paddingTop: "200px" }}>Home!</div>
+					</div>
+				</div>
 			</React.Fragment>
 		);
 	}
