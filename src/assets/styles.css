@@ -19,7 +19,7 @@ body {
 }
 
 .black {
-	color: black;
+	color: black !important;
 }
 
 .white-bg {
@@ -27,7 +27,7 @@ body {
 }
 
 .white {
-	color: white;
+	color: white !important;
 }
 
 .full-page {
