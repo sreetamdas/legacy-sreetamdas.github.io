@@ -18,6 +18,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import Brand from "./Brand";
+import Overlay from "./Overlay";
 
 export default class CustomNav extends React.Component {
 	constructor(props) {
@@ -30,7 +31,8 @@ export default class CustomNav extends React.Component {
 			hover: false,
 			portfolio: [
 				{
-					name: "Say Hi!",
+					name: "Drop me a mail :)",
+					text: "Say Hi!",
 					color: "#000",
 					link: "mailto:sreetamdas@gmail.com",
 				},
@@ -46,6 +48,7 @@ export default class CustomNav extends React.Component {
 					icon: faStackOverflow,
 					color: "#f48024",
 					link: "https://stackoverflow.com/users/5283213",
+					black: true,
 				},
 
 				{
@@ -85,14 +88,23 @@ export default class CustomNav extends React.Component {
 					})
 				}
 			>
-				<NavLink className="white" href={item.link}>
+				<NavLink
+					className={`${
+						this.state.hover
+							? this.state.active.black
+								? "black"
+								: "white"
+							: "white"
+					}`}
+					href={item.link}
+				>
 					{item.icon ? (
 						<FontAwesomeIcon
 							icon={item.icon}
 							style={{ fontSize: "30px", margin: "0 5px" }}
 						/>
 					) : (
-						<p style={{ fontSize: "25px" }}>{item.name}</p>
+						<p style={{ fontSize: "25px" }}>{item.text}</p>
 					)}
 				</NavLink>
 			</NavItem>
@@ -100,21 +112,31 @@ export default class CustomNav extends React.Component {
 	};
 	render() {
 		return (
-			// <div>
-			<Navbar className="black-bg" dark fixed="top" expand="md">
-				<NavbarBrand href="/" className="white">
-					<Brand />
-				</NavbarBrand>
-				<NavbarToggler onClick={this.toggle} />
-				<Collapse isOpen={this.state.isOpen} navbar>
-					<Nav className="ml-auto white" navbar>
-						{Object.keys(this.state.portfolio).map(index => (
-							<this.Navlinks index={index} key={index} />
-						))}
-					</Nav>
-				</Collapse>
-			</Navbar>
-			// </div>
+			<React.Fragment>
+				<Navbar
+					dark
+					fixed="top"
+					expand="md"
+					style={{
+						backgroundColor: `${
+							this.state.hover ? this.state.active.color : "black"
+						}`,
+					}}
+				>
+					<NavbarBrand href="/">
+						<Brand />
+					</NavbarBrand>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className="ml-auto white" navbar>
+							{Object.keys(this.state.portfolio).map(index => (
+								<this.Navlinks index={index} key={index} />
+							))}
+						</Nav>
+					</Collapse>
+				</Navbar>
+				{this.state.hover && <Overlay item={this.state.active} />}
+			</React.Fragment>
 		);
 	}
 }

@@ -1,12 +1,12 @@
 import React from "react";
 
-const style = {
-	fontSize: "50px",
-};
-
 const Overlay = props => (
-	<div className="overlay full-page" style={style}>
-		This is an overlay.
+	<div className="full-page" style={{ backgroundColor: props.item.color }}>
+		<div style={props.item.black && { color: "black" }}>
+			<div style={{ fontSize: "50px", paddingTop: "200px" }}>
+				{props.item.name}
+			</div>
+		</div>
 	</div>
 );
 export default Overlay;

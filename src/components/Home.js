@@ -7,7 +7,6 @@ class Home extends React.Component {
 		return (
 			<React.Fragment>
 				<Landing />
-				<Overlay />
 				<div>literally anything</div>
 			</React.Fragment>
 		);
