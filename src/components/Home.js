@@ -1,21 +1,14 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Overlay from "./Overlay";
+import Landing from "./Landing";
 
 class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="black-bg white">
-					<Navbar />
-					<div
-						style={{ fontSize: "40px" }}
-						className="black-bg white full-page"
-					>
-						<div style={{ paddingTop: "200px" }}>
-							Hey!<br />I'm Sreetam Das.
-						</div>
-					</div>
-				</div>
+				<Landing />
+				<Overlay />
+				<div>literally anything</div>
 			</React.Fragment>
 		);
 	}

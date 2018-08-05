@@ -26,7 +26,14 @@ export default class CustomNav extends React.Component {
 		this.toggle = this.toggle.bind(this);
 		this.state = {
 			isOpen: false,
+			active: null,
+			hover: false,
 			portfolio: [
+				{
+					name: "Say Hi!",
+					color: "#000",
+					link: "mailto:sreetamdas@gmail.com",
+				},
 				{
 					name: "Github",
 					icon: faGithub,
@@ -65,43 +72,49 @@ export default class CustomNav extends React.Component {
 	Navlinks = props => {
 		let item = this.state.portfolio[props.index];
 		return (
-			<NavItem>
-				<NavLink className="white">
-					<a href={item.link}>
+			<NavItem
+				onMouseOver={() =>
+					this.setState({
+						hover: true,
+						active: item,
+					})
+				}
+				onMouseOut={() =>
+					this.setState({
+						hover: false,
+					})
+				}
+			>
+				<NavLink className="white" href={item.link}>
+					{item.icon ? (
 						<FontAwesomeIcon
 							icon={item.icon}
 							style={{ fontSize: "30px", margin: "0 5px" }}
 						/>
-					</a>
+					) : (
+						<p style={{ fontSize: "25px" }}>{item.name}</p>
+					)}
 				</NavLink>
 			</NavItem>
 		);
 	};
 	render() {
 		return (
-			<div>
-				<Navbar color="faded" light expand="md">
-					<NavbarBrand href="/" className="white">
-						<Brand />
-					</NavbarBrand>
-					<NavbarToggler onClick={this.toggle} />
-					<Collapse isOpen={this.state.isOpen} navbar>
-						<Nav className="ml-auto white" navbar>
-							<NavItem>
-								<a
-									href="mailto:sreetamdas@gmail.com"
-									style={{ fontSize: "25px" }}
-								>
-									<NavLink className="white">Say Hi!</NavLink>
-								</a>
-							</NavItem>
-							{Object.keys(this.state.portfolio).map(index => (
-								<this.Navlinks index={index} key={index} />
-							))}
-						</Nav>
-					</Collapse>
-				</Navbar>
-			</div>
+			// <div>
+			<Navbar className="black-bg" dark fixed="top" expand="md">
+				<NavbarBrand href="/" className="white">
+					<Brand />
+				</NavbarBrand>
+				<NavbarToggler onClick={this.toggle} />
+				<Collapse isOpen={this.state.isOpen} navbar>
+					<Nav className="ml-auto white" navbar>
+						{Object.keys(this.state.portfolio).map(index => (
+							<this.Navlinks index={index} key={index} />
+						))}
+					</Nav>
+				</Collapse>
+			</Navbar>
+			// </div>
 		);
 	}
 }

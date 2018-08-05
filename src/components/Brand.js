@@ -9,7 +9,7 @@ const Brand = () => (
 				style={{ width: "30px", marginRight: "10px" }}
 				alt="Live Long and Prosper!"
 			/>
-			Sreetam Das
+			{/* Sreetam Das */}
 		</h1>
 	</React.Fragment>
 );
