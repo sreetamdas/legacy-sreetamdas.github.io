@@ -19,7 +19,6 @@ export default class Loves extends React.Component {
 	};
 	CycleText = () => {
 		let i = 1;
-		
 		setInterval(() => {
 			if (i === this.state.list.length) {
 				i = 0;
