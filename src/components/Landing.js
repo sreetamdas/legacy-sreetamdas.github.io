@@ -1,6 +1,9 @@
 import React from "react";
 import CustomNav from "./Navbar";
 // import Overlay from "./Overlay";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import Loves from "./Loves";
 
 class Landing extends React.Component {
 	render() {
@@ -9,7 +12,8 @@ class Landing extends React.Component {
 				<CustomNav />
 				<div style={{ fontSize: "40px" }}>
 					<div style={{ paddingTop: "200px" }}>
-						Hey!<br />I'm Sreetam Das.
+						Hey!<br />I'm Sreetam Das.<br />
+						<br />I <FontAwesomeIcon icon={faHeart} color="red" size="sm" /> <Loves />
 					</div>
 				</div>
 			</div>
