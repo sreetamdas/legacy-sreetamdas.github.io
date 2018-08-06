@@ -1,5 +1,4 @@
 import React from "react";
-import Overlay from "./Overlay";
 import Landing from "./Landing";
 
 class Home extends React.Component {
