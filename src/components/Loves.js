@@ -7,7 +7,7 @@ export default class Loves extends React.Component {
 		this.CycleText = this.CycleText.bind(this);
 
 		this.state = {
-			list: ["React", "Python", "Django", "RGB", "Counter Strike"],
+			list: ["React", "Python", "Django", "RGB", "Counter Strike", "Reddit"],
 			active: "",
 		};
 	}

@@ -119,7 +119,11 @@ export default class CustomNav extends React.Component {
 					expand="md"
 					style={{
 						backgroundColor: `${
-							this.state.hover ? this.state.active.color : "black"
+							this.state.hover
+								? this.state.active.color
+								: this.props.color
+									? this.props.color
+									: `black`
 						}`,
 					}}
 				>
