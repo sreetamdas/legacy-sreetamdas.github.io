@@ -37,7 +37,7 @@ export default class CustomNav extends React.Component {
 					link: "mailto:sreetamdas@gmail.com",
 				},
 				{
-					name: "Github",
+					name: "GitHub",
 					icon: faGithub,
 					color: "#333",
 					link: "https://github.com/sreetamdas",
