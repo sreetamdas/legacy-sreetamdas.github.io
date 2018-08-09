@@ -1,14 +1,18 @@
 import React from "react";
 import doggos from "../assets/dogs.jpg";
 import CustomNav from "./Navbar";
-
-const bg_image = "";
+import Helmet from "react-helmet";
+// const bg_image = "";
 const NotFound = () => (
 	<div className="white">
 		<CustomNav color="transparent" />
+		<Helmet>
+			<title>404!</title>
+		</Helmet>
 		<div className="full-page">
 			<img
 				src={doggos}
+				alt="Dogs!"
 				style={{
 					overflowY: "hidden",
 					position: "absolute",
