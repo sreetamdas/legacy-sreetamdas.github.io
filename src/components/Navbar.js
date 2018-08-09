@@ -31,6 +31,12 @@ export default class CustomNav extends React.Component {
 			hover: false,
 			portfolio: [
 				{
+					name: "I don't care, just show me dogs!",
+					text: "404!",
+					color: "#000",
+					link: "/404",
+				},
+				{
 					name: "Drop me a mail :)",
 					text: "Say Hi!",
 					color: "#000",
@@ -133,6 +139,15 @@ export default class CustomNav extends React.Component {
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto white" navbar>
+							{/* <NavItem>
+								<NavLink
+									className="white"
+									href="/404"
+									style={{ fontSize: "25px" }}
+								>
+									404
+								</NavLink>
+							</NavItem> */}
 							{Object.keys(this.state.portfolio).map(index => (
 								<this.Navlinks index={index} key={index} />
 							))}
