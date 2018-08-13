@@ -21,7 +21,7 @@ const NotFound = () => (
 					height: "100%",
 					objectFit: "cover",
 					backgroundPosition: "center",
-					filter: "brightness(50%)",
+					filter: "brightness(70%)",
 				}}
 			/>
 			<div className="vertical-center">
@@ -29,7 +29,9 @@ const NotFound = () => (
 					404!
 				</h1>
 				<h2 style={{ fontSize: "20px" }}>
-					I can't find what you were looking for,<br />so here's an{" "}
+					I can't find what you were looking for,
+					<br />
+					so here's an{" "}
 					<a
 						href="https://www.theguardian.com/lifeandstyle/gallery/2018/jul/18/dog-photographer-of-the-year-2018-in-pictures"
 						className="twitter-blue"
@@ -50,7 +52,8 @@ const NotFound = () => (
 						className="twitter-blue"
 					>
 						I got you
-					</a>.
+					</a>
+					.
 				</h3>
 			</div>
 		</div>

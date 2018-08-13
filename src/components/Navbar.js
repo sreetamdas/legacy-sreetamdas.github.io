@@ -48,7 +48,6 @@ export default class CustomNav extends React.Component {
 					color: "#333",
 					link: "https://github.com/sreetamdas",
 				},
-
 				{
 					name: "StackOverflow",
 					icon: faStackOverflow,
@@ -56,14 +55,12 @@ export default class CustomNav extends React.Component {
 					link: "https://stackoverflow.com/users/5283213",
 					black: true,
 				},
-
 				{
 					name: "Twitter",
 					icon: faTwitter,
 					color: "#1da1f2",
 					link: "https://twitter.com/sreetamdas",
 				},
-
 				{
 					name: "Facebook",
 					icon: faFacebookSquare,
@@ -133,7 +130,7 @@ export default class CustomNav extends React.Component {
 						}`,
 					}}
 				>
-					<NavbarBrand href="/">
+					<NavbarBrand href="/" style={{ paddingTop: "0" }}>
 						<Brand />
 					</NavbarBrand>
 					<NavbarToggler onClick={this.toggle} />

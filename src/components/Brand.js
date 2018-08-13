@@ -6,7 +6,7 @@ const Brand = () => (
 		<h1 style={{ fontSize: "25px" }}>
 			<img
 				src={logo}
-				style={{ width: "30px", marginRight: "10px" }}
+				style={{ width: "35px" }}
 				alt="Live Long and Prosper!"
 			/>
 			{/* Sreetam Das */}

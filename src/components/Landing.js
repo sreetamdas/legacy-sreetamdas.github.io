@@ -12,8 +12,11 @@ class Landing extends React.Component {
 			<div className="black-bg white full-page">
 				<CustomNav />
 				<div style={{ fontSize: "40px" }}>
-					<div style={{ paddingTop: "200px" }}>
-						Hey!<br />I'm Sreetam Das.<br />
+					<div style={{ paddingTop: "200px", paddingLeft: "100px" }}>
+						Hey!
+						<br />
+						I'm Sreetam Das.
+						<br />
 						<br />I{" "}
 						<FontAwesomeIcon
 							icon={faHeart}
