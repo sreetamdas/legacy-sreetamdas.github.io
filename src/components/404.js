@@ -9,7 +9,7 @@ const NotFound = () => (
 		<Helmet>
 			<title>404!</title>
 		</Helmet>
-		<div className="full-page">
+		<div className="full-page text-center">
 			<img
 				src={doggos}
 				alt="Dogs!"
@@ -44,7 +44,12 @@ const NotFound = () => (
 					style={{
 						fontSize: "14px",
 						paddingTop: "20px",
+						position: "absolute",
+						bottom: "50px",
+						width: "100%",
+						textAlign: "center",
 					}}
+					// className="text-center"
 				>
 					In case you just want to check out some more dog photos,{" "}
 					<a

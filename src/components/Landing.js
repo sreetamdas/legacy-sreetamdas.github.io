@@ -12,7 +12,7 @@ class Landing extends React.Component {
 			<div className="black-bg white full-page">
 				<CustomNav />
 				<div style={{ fontSize: "40px" }}>
-					<div style={{ paddingTop: "200px", paddingLeft: "100px" }}>
+					<div style={{ paddingTop: "200px" }} className="container">
 						Hey!
 						<br />
 						I'm Sreetam Das.

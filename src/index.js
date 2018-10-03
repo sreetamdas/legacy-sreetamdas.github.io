@@ -20,18 +20,14 @@ import registerServiceWorker from "./registerServiceWorker";
 const Root = () => {
 	return (
 		<React.Fragment>
-
 			<Favicon url={favicon} />
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
-			<Switch>
-				<Route exact path="/" component={Home} />
-				{/* <Route exact path="/add" component={AddMembers} />
-				<Route exact path="/oldies" component={Oldies} />
-			<Route exact path="/test" component={Test} /> */}
-				<Route component={NotFound} />
-			</Switch>
-		</BrowserRouter>
-			</React.Fragment>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route component={NotFound} />
+				</Switch>
+			</BrowserRouter>
+		</React.Fragment>
 	);
 };
 
