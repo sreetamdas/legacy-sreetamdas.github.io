@@ -1,4 +1,4 @@
-# sreetamdas.github.ioe
+# sreetamdas.github.io
 
 Hey there!
 I see you've taken some interest in my [website](https://sreetamdas.github.io).
