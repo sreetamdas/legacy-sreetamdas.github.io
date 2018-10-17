@@ -13,7 +13,6 @@ class Landing extends React.Component {
 					<div style={{ paddingTop: "200px" }} className="container">
 						Hey! I'm Sreetam Das,
 						<br />
-						<br />
 						<span style={{ fontSize: "30px" }}>
 							a frontend developer who graduated from{" "}
 							<a
@@ -38,7 +37,7 @@ class Landing extends React.Component {
 							>
 								Quizzing
 							</a>
-							.
+							!
 						</span>
 						<br />
 						<br />
