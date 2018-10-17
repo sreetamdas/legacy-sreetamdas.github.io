@@ -8,7 +8,7 @@ import {
 	NavItem,
 	NavLink,
 } from "reactstrap";
-
+import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
@@ -91,25 +91,26 @@ export default class CustomNav extends React.Component {
 					})
 				}
 			>
-				<NavLink
-					className={`${
-						this.state.hover
-							? this.state.active.black
-								? "black"
+				<LinkContainer href={item.link}>
+					<NavLink
+						className={`${
+							this.state.hover
+								? this.state.active.black
+									? "black"
+									: "white"
 								: "white"
-							: "white"
-					}`}
-					href={item.link}
-				>
-					{item.icon ? (
-						<FontAwesomeIcon
-							icon={item.icon}
-							style={{ fontSize: "30px", margin: "0 5px" }}
-						/>
-					) : (
-						<p style={{ fontSize: "25px" }}>{item.text}</p>
-					)}
-				</NavLink>
+						}`}
+					>
+						{item.icon ? (
+							<FontAwesomeIcon
+								icon={item.icon}
+								style={{ fontSize: "30px", margin: "0 5px" }}
+							/>
+						) : (
+							<p style={{ fontSize: "25px" }}>{item.text}</p>
+						)}
+					</NavLink>
+				</LinkContainer>
 			</NavItem>
 		);
 	};
@@ -130,9 +131,11 @@ export default class CustomNav extends React.Component {
 						}`,
 					}}
 				>
-					<NavbarBrand href="/" style={{ paddingTop: "0" }}>
-						<Brand />
-					</NavbarBrand>
+					<LinkContainer to="/">
+						<NavbarBrand style={{ paddingTop: "0" }}>
+							<Brand />
+						</NavbarBrand>
+					</LinkContainer>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto white" navbar>
