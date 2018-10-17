@@ -91,7 +91,7 @@ export default class CustomNav extends React.Component {
 					})
 				}
 			>
-				<LinkContainer href={item.link}>
+				<LinkContainer to={item.link}>
 					<NavLink
 						className={`${
 							this.state.hover
