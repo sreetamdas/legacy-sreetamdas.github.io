@@ -10,7 +10,6 @@ class Home extends React.Component {
 					<title>Hi, I'm Sreetam!</title>
 				</Helmet>
 				<Landing />
-				<div>literally anything</div>
 			</React.Fragment>
 		);
 	}

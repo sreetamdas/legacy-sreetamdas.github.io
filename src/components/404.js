@@ -2,7 +2,7 @@ import React from "react";
 import doggos from "../assets/dogs.jpg";
 import CustomNav from "./Navbar";
 import Helmet from "react-helmet";
-// const bg_image = "";
+
 const NotFound = () => (
 	<div className="white">
 		<CustomNav color="transparent" />

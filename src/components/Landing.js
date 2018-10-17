@@ -1,6 +1,5 @@
 import React from "react";
 import CustomNav from "./Navbar";
-// import Overlay from "./Overlay";
 import Loves from "./Loves";
 import Footer from "./Footer";
 
