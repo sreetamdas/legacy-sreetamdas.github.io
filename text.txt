@@ -1,9 +1,0 @@
-<span id="a">kranthi@www</span>:<span id="b">~</span><span id="c">$</span> cat kranthikiran.txt<br/><br/>
-Hi, I'm Kranthi Kiran.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>I am currently working as a Technology Analyst with Goldman Sachs. I did my undergrad in CS from <a href="http://www.nitw.ac.in/" target="_blank">NIT Warangal</a>.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
-<p>I'm a <a href="http://www.github.com/kranthikiran01/" target="_blank">developer</a>, geek and curious human besides being an OpenSource enthusiast and the co-founder of <a href="http://www.gearsystems.org/" target="_blank">GearSystems</a>. I have experience of delivering solutions for interesting problems from startup and industry space. </p><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
-<p>I love to read, listen to music, and travel.</p><!-- owlsqweoifjqwoefijqwoeifjqwoefijwef -->
-If you would like to get in touch with me, be it for tech support, a business, or to just say hi<!-- slightdelayhere-->, feel free to send me an email.<!-- longlongcomment --> My email address is: <a href="mailto:guduru.kranthikiran@gmail.com">guduru.kranthikiran@gmail.com</a><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
-
-<p>I express myself through blogs. Visit <a href="http://kranthi.space/" target="_blank">kranthi.space</a> and <a href="http://kranthi.gearsystems.org/" target="_blank">kranthi@gearystems</a> for reading about my awesome projects, tips, tricks, tutorials and lot more.</p>
-
-<p>It's my social responsibility to tell where I partied last Saturday <br>Find me on <a class="facebook" target="_blank" href="http://www.facebook.com/guduru.kranthikiran">Facebook</a> , <a class="twitter" href="http://www.twitter.com/Kranthi_Guduru" target="_blank">Twitter</a>, <a href="http://www.google.com/+KranthiKiranGuduru" target="_blank" class="google">Google+</a></p>
