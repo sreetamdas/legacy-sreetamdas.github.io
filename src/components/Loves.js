@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default class Loves extends React.Component {
 	constructor(props) {
@@ -7,7 +9,17 @@ export default class Loves extends React.Component {
 		this.CycleText = this.CycleText.bind(this);
 
 		this.state = {
-			list: ["React", "Python", "Django", "RGB", "Counter Strike", "Reddit"],
+			list: [
+				"React",
+				"Python",
+				"Django",
+				"RGB",
+				"Counter Strike",
+				"Reddit",
+				"Open Source",
+				"Stickers",
+				"Coffee",
+			],
 			active: "",
 		};
 	}
@@ -29,6 +41,11 @@ export default class Loves extends React.Component {
 		}, 500);
 	};
 	render() {
-		return <React.Fragment>{this.state.active}</React.Fragment>;
+		return (
+			<React.Fragment>
+				I <FontAwesomeIcon icon={faHeart} color="red" size="sm" />{" "}
+				{this.state.active}
+			</React.Fragment>
+		);
 	}
 }
