@@ -15,6 +15,8 @@ import {
 	faStackOverflow,
 	faTwitter,
 	faFacebookSquare,
+	faLinkedin,
+	faAmazon,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Brand from "./Brand";
@@ -56,6 +58,12 @@ export default class CustomNav extends React.Component {
 					black: true,
 				},
 				{
+					name: "LinkedIn",
+					icon: faLinkedin,
+					color: "#0077b5",
+					link: "https://www.linkedin.com/in/sreetamdas",
+				},
+				{
 					name: "Twitter",
 					icon: faTwitter,
 					color: "#1da1f2",
@@ -66,6 +74,15 @@ export default class CustomNav extends React.Component {
 					icon: faFacebookSquare,
 					color: "#3b5998",
 					link: "https://www.facebook.com/sreetam.das",
+				},
+				{
+					name:
+						"Buy Me Something from My Amazon Wishlist, Thanks!",
+					icon: faAmazon,
+					color: "#ff9900",
+					link:
+						"https://www.amazon.in/gp/registry/wishlist/1WXK3SFYVT6T1",
+					black: true,
 				},
 			],
 		};
