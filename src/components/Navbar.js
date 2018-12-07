@@ -37,18 +37,21 @@ export default class CustomNav extends React.Component {
 					text: "404!",
 					color: "#000",
 					link: "/404",
+					_blank: false,
 				},
 				{
 					name: "Drop me a mail :)",
 					text: "Say Hi!",
 					color: "#000",
 					link: "mailto:sreetamdas@gmail.com",
+					_blank: true,
 				},
 				{
 					name: "GitHub",
 					icon: faGithub,
 					color: "#333",
 					link: "https://github.com/sreetamdas",
+					_blank: true,
 				},
 				{
 					name: "StackOverflow",
@@ -56,32 +59,36 @@ export default class CustomNav extends React.Component {
 					color: "#f48024",
 					link: "https://stackoverflow.com/users/5283213",
 					black: true,
+					_blank: true,
 				},
 				{
 					name: "LinkedIn",
 					icon: faLinkedin,
 					color: "#0077b5",
 					link: "https://www.linkedin.com/in/sreetamdas",
+					_blank: true,
 				},
 				{
 					name: "Twitter",
 					icon: faTwitter,
 					color: "#1da1f2",
 					link: "https://twitter.com/sreetamdas",
+					_blank: true,
 				},
 				{
 					name: "Facebook",
 					icon: faFacebookSquare,
 					color: "#3b5998",
 					link: "https://www.facebook.com/sreetam.das",
+					_blank: true,
 				},
 				{
-					name:
-						"Buy Me Something from My Amazon Wishlist, Thanks!",
+					name: "Buy Me Something from My Amazon Wishlist, Thanks!",
 					icon: faAmazon,
 					color: "#ff9900",
 					link:
 						"https://www.amazon.in/gp/registry/wishlist/1WXK3SFYVT6T1",
+					_blank: true,
 					black: true,
 				},
 			],
@@ -108,7 +115,7 @@ export default class CustomNav extends React.Component {
 					})
 				}
 			>
-				<LinkContainer to={item.link}>
+				{item._blank ? (
 					<NavLink
 						className={`${
 							this.state.hover
@@ -117,17 +124,46 @@ export default class CustomNav extends React.Component {
 									: "white"
 								: "white"
 						}`}
+						href={item.link}
+						target="_blank"
 					>
 						{item.icon ? (
 							<FontAwesomeIcon
 								icon={item.icon}
-								style={{ fontSize: "30px", margin: "0 5px" }}
+								style={{
+									fontSize: "30px",
+									margin: "0 5px",
+								}}
 							/>
 						) : (
 							<p style={{ fontSize: "25px" }}>{item.text}</p>
 						)}
 					</NavLink>
-				</LinkContainer>
+				) : (
+					<LinkContainer to={item.link}>
+						<NavLink
+							className={`${
+								this.state.hover
+									? this.state.active.black
+										? "black"
+										: "white"
+									: "white"
+							}`}
+						>
+							{item.icon ? (
+								<FontAwesomeIcon
+									icon={item.icon}
+									style={{
+										fontSize: "30px",
+										margin: "0 5px",
+									}}
+								/>
+							) : (
+								<p style={{ fontSize: "25px" }}>{item.text}</p>
+							)}
+						</NavLink>
+					</LinkContainer>
+				)}
 			</NavItem>
 		);
 	};
@@ -143,8 +179,8 @@ export default class CustomNav extends React.Component {
 							this.state.hover
 								? this.state.active.color
 								: this.props.color
-									? this.props.color
-									: `black`
+								? this.props.color
+								: `black`
 						}`,
 					}}
 				>
@@ -156,15 +192,6 @@ export default class CustomNav extends React.Component {
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto white" navbar>
-							{/* <NavItem>
-								<NavLink
-									className="white"
-									href="/404"
-									style={{ fontSize: "25px" }}
-								>
-									404
-								</NavLink>
-							</NavItem> */}
 							{Object.keys(this.state.portfolio).map(index => (
 								<this.Navlinks index={index} key={index} />
 							))}

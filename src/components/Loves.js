@@ -6,8 +6,6 @@ export default class Loves extends React.Component {
 	constructor(props) {
 		super();
 
-		this.CycleText = this.CycleText.bind(this);
-
 		this.state = {
 			list: [
 				"React",
@@ -24,21 +22,22 @@ export default class Loves extends React.Component {
 		};
 	}
 	componentDidMount = () => {
+		let i = 1,
+			interval = setInterval(() => {
+				if (i === this.state.list.length) {
+					i = 0;
+				}
+				this.setState({ active: this.state.list[i++] });
+			}, 500);
+
 		this.setState({
 			active: this.state.list[0],
+			interval: interval,
 		});
-		this.CycleText();
 	};
-	CycleText = () => {
-		let i = 1;
-		setInterval(() => {
-			if (i === this.state.list.length) {
-				i = 0;
-			}
-			this.setState({
-				active: this.state.list[i++],
-			});
-		}, 500);
+	componentWillUnmount = () => {
+		console.log("unmounting");
+		clearInterval(this.state.interval);
 	};
 	render() {
 		return (
